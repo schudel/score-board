@@ -1,0 +1,28 @@
+/* variables */
+
+/* main container */
+$font-family: 'Roboto-Light', sans-serif;
+$font-weight: 300;
+$main-font-color: #48465b;
+$main-content-bg: linear-gradient(to bottom, #020111 10%,#3a3a52 100%); /* linear-gradient(to bottom, #020111 60%,#20202c 100%) / #f9f9fc;*/
+$main-content-padding: 20px;
+$mat-button-icon-font-size: 24px;
+
+/* navigation */
+$navigation-height: 64px;
+$navigation-height-small: 60px;
+$navigation-sidebar-width: 80%;
+
+/* footer */
+$footer-height: 64px;
+$footer-height-small: 60px;
+
+/* loading */
+$loading-animation-img-width: 80px;
+$loading-animation-img-height: 80px;
+$loading-animation-bg-color: rgba(0, 0, 0, 0.6);
+$loading-animation-color: rgba(255, 255, 255, 1);
+$loading-animation-img-url: "/assets/media/loading.svg";
+
+/* images */
+$team-container-bg-url: "/assets/media/bg-5.jpg"

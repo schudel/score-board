@@ -1,0 +1,21 @@
+<div class="players-container animated fadeIn">
+  <div class="game-selector">
+    <mat-card>
+      <mat-card-content>
+        <mat-form-field class="select-game">
+          <mat-label i18n>Select Game for all Players</mat-label>
+          <mat-select [(value)]="gameId" (valueChange)="changeGame($event)">
+            <mat-option *ngFor="let game of games" [value]="game.id">
+              {{game.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div *ngIf="players" [@cardAnimation]="players.length" @plusAnimation>
+    <div class="player-info-container" *ngFor="let player of players; index as i;">
+      <app-player-info [player]="player" [ratings]="ratings" [matches]="getMatches(player.id)" [game]="game" [favoriteGame]="getFavoriteGame(player)" [favoriteTeamMember]="getFavoriteTeamMember(player)" disableGameSelection="true"></app-player-info>
+    </div>
+  </div>
+</div>

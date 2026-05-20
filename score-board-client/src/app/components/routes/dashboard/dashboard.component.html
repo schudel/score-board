@@ -1,0 +1,48 @@
+<div class="dashboard-container animated fadeIn">
+  <div class="edit-button-group" *ngIf="!editable">
+    <button mat-stroked-button color="accent" (click)="toggleEditable()" matTooltip="Edit Dashboard" i18n-matTooltip>
+      <i class="fas fa-edit"></i>
+    </button>
+    <div class="arrow animated fadeInDown">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+  <div class="button-group" *ngIf="editable">
+    <button mat-stroked-button color="accent" (click)="toggleEditable()" matTooltip="Save Dashboard" i18n-matTooltip>
+      <i class="fas fa-save"></i>
+    </button>
+    <button mat-stroked-button color="accent" (click)="cancel()" matTooltip="Cancel" i18n-matTooltip>
+      <i class="fas fa-window-close"></i>
+    </button>
+    <button mat-stroked-button color="accent" (click)="addItem()" matTooltip="Add Widget" i18n-matTooltip>
+      <i class="fas fa-plus-circle"></i>
+    </button>
+    <button mat-stroked-button color="accent" (click)="setDefaultLayout()" matTooltip="Reset Dashboard" i18n-matTooltip>
+      <i class="fas fa-step-backward"></i>
+    </button>
+  </div>
+  <gridster [options]="options" *ngIf="currentPlayer">
+    <gridster-item [item]="item" *ngFor="let item of dashboard">
+      <app-widget-selector *ngIf="editable"
+                           [players]="players"
+                           [currentPlayer]="currentPlayer"
+                           [epicMatches]="epicMatches"
+                           [myMatches]="myMatches"
+                           [highestScore]="highestScore"
+                           [ranking]="ranking"
+                           [recentMatches]="recentMatches"
+                           [ratings]="ratings"
+                           [(widget)]="item.label"
+                           (removeButtonClicked)="removeItem(item)"></app-widget-selector>
+      <app-number-one-widget *ngIf="!editable && item.label === 'NoOneWidget'" [ratings]="ratings" [players]="players"></app-number-one-widget>
+      <app-live-matches *ngIf="!editable && item.label === 'LiveMatches'"></app-live-matches>
+      <app-match-list *ngIf="!editable && item.label === 'RecentMatches'" title="Recent Matches" i18n-title [matches]="recentMatches" sortColumn="StartTime"></app-match-list>
+      <app-match-list *ngIf="!editable && item.label === 'MyMatches'" title="My Matches" i18n-title [matches]="myMatches" sortColumn="StartTime"></app-match-list>
+      <app-match-list *ngIf="!editable && item.label === 'EpicMatches'"  title="Epic Matches" i18n-title [matches]="epicMatches" sortColumn="MatchQuality"></app-match-list>
+      <app-player-info *ngIf="!editable && item.label === 'MyStatistics'" [player]="currentPlayer" [ratings]="ratings" [matches]="myMatches" [favoriteGame]="getFavoriteGame()" [favoriteTeamMember]="getFavoriteTeamMember()"></app-player-info>
+      <app-score-board-info *ngIf="!editable && item.label === 'ScoreBoardInfo'" [highestScore]="highestScore"></app-score-board-info>
+      <app-dashboard-tile *ngIf="!editable && item.label === 'StartMatch'" label="Start Match" i18n-label link="/match/create"></app-dashboard-tile>
+      <app-ranking-widget *ngIf="!editable && item.label === 'Ranking'" [ratings]="ratings"></app-ranking-widget>
+    </gridster-item>
+  </gridster>
+</div>

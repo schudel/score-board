@@ -1,0 +1,15 @@
+<div class="admin-container animated fadeIn">
+  <mat-card>
+    <mat-card-title id="top" i18n>Admin</mat-card-title>
+    <mat-card-content>
+      <h2 i18n>Ratings</h2>
+      <button type="button" mat-stroked-button color="accent" (click)="calcAllRatings()" i18n>(Re)Calc All Ratings</button>
+      <button type="button" mat-stroked-button color="accent" (click)="calcAllMatchQualities()" i18n>(Re)Calc All Match Qualities</button>
+      <button type="button" mat-stroked-button color="accent" (click)="calcAllRatingHistories()" i18n>(Re)Calc All Rating Histories</button>
+      <h2 i18n>Chats</h2>
+      <button type="button" mat-stroked-button color="accent" (click)="deleteAllChats()" i18n>Delete all Chat Messages</button>
+      <h2 i18n>Live</h2>
+      <button type="button" mat-stroked-button color="accent" (click)="deleteAllLiveMatches()" i18n>Delete all Live Matches</button>
+    </mat-card-content>
+  </mat-card>
+</div>

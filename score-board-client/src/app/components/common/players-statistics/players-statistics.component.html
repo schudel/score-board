@@ -1,0 +1,46 @@
+<div class="players-statistics">
+  <div class="select-player">
+    <mat-form-field >
+      <mat-label i18n>Select Player</mat-label>
+      <mat-select [(value)]="playerId" (valueChange)="changePlayer($event)">
+        <mat-option *ngFor="let player of playersInternal" [value]="player.id">
+          <span *ngIf="player.id === allPlayersString">{{player.playerName}}</span>
+          <span *ngIf="player.id !== allPlayersString">{{player.playerName}} ({{player.firstName}} {{player.lastName}})</span>
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="chart-container" *ngIf="playedGamesData.length > 0" [ngClass]="{'big': playedGamesData.length >= 10 || playedGamesColumns.length >= 10, 'bigger': playedGamesData.length >= 25, 'huge': playedGamesData.length >= 50}">
+    <h3 i18n>Played Matches per Game</h3>
+    <google-chart
+      [type]="playedGamesType"
+      [data]="playedGamesData"
+      [columnNames]="playedGamesColumns"
+      [options]="playedGamesOptions"
+      [dynamicResize]="true">
+    </google-chart>
+  </div>
+
+  <div class="chart-container" *ngIf="playerId !== allPlayersString && wonLostDrawnGamesData.length > 0" [ngClass]="{'big': wonLostDrawnGamesData.length >= 10, 'bigger': wonLostDrawnGamesData.length >= 25, 'huge': wonLostDrawnGamesData.length >= 50}">
+    <h3 i18n>Won / Lost / Drawn Matches per Game</h3>
+    <google-chart
+      [type]="wonLostDrawnGamesGamesType"
+      [data]="wonLostDrawnGamesData"
+      [columnNames]="wonLostDrawnGamesColumns"
+      [options]="wonLostDrawnGamesOptions"
+      [dynamicResize]="true">
+    </google-chart>
+  </div>
+
+  <div class="chart-container" *ngIf="playerId !== allPlayersString && teamMembersData.length > 0" [ngClass]="{'big': teamMembersData.length >= 10}">
+    <h3 i18n>Team Members</h3>
+    <google-chart
+      [type]="teamMembersType"
+      [data]="teamMembersData"
+      [columnNames]="teamMembersColumns"
+      [options]="teamMembersOptions"
+      [dynamicResize]="true">
+    </google-chart>
+  </div>
+</div>

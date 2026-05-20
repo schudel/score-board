@@ -1,0 +1,30 @@
+.live-container {
+
+  .create-button-container {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  .scores {
+    font-weight: bold;
+    color: #ff4081;
+  }
+  .team {
+
+  }
+  .live-duration {
+
+  }
+  .state {
+
+  }
+}
+
+.dark-theme {
+  .live-container {
+    .scores {
+      color: #ffd740 !important;
+    }
+  }
+}

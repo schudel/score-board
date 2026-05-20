@@ -1,0 +1,35 @@
+<div class="games-statistics">
+  <div class="select-game">
+    <mat-form-field >
+      <mat-label i18n>Select Game</mat-label>
+      <mat-select [(value)]="gameId" (valueChange)="changeGame($event)">
+        <mat-option *ngFor="let game of gamesInternal" [value]="game.id">
+          <span class="match-game-image-container"><img *ngIf="game.image" class="match-game-image" [src]="game.image" alt="Game Cover"></span>
+          <span>{{game.name}}</span>
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="chart-container big" *ngIf="wonLostDrawnTeamsData.length > 0" [ngClass]="{'big': wonLostDrawnTeamsData.length >= 10, 'bigger': wonLostDrawnTeamsData.length >= 25, 'huge': wonLostDrawnTeamsData.length >= 50}">
+    <h3 i18n>Won / Lost / Drawn Matches per Team</h3>
+    <google-chart
+      [type]="wonLostDrawnTeamsType"
+      [data]="wonLostDrawnTeamsData"
+      [columnNames]="wonLostDrawnTeamsColumns"
+      [options]="wonLostDrawnTeamsOptions"
+      [dynamicResize]="true">
+    </google-chart>
+  </div>
+
+  <div class="chart-container big" *ngIf="wonLostDrawnPlayersData.length > 0" [ngClass]="{'big': wonLostDrawnPlayersData.length >= 10, 'bigger': wonLostDrawnPlayersData.length >= 25, 'huge': wonLostDrawnPlayersData.length >= 50}">
+    <h3 i18n>Won / Lost / Drawn Matches per Player</h3>
+    <google-chart
+      [type]="wonLostDrawnPlayersType"
+      [data]="wonLostDrawnPlayersData"
+      [columnNames]="wonLostDrawnPlayersColumns"
+      [options]="wonLostDrawnPlayersOptions"
+      [dynamicResize]="true">
+    </google-chart>
+  </div>
+</div>

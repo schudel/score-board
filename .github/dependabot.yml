@@ -1,0 +1,44 @@
+version: 2
+updates:
+  # .NET backend – NuGet packages
+  - package-ecosystem: "nuget"
+    directory: "/score-board-server"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "backend"
+
+  # Angular main client – npm packages
+  - package-ecosystem: "npm"
+    directory: "/score-board-client"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "frontend"
+
+  # Angular redirect app – npm packages
+  - package-ecosystem: "npm"
+    directory: "/score-board-redirect"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "redirect"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+      - "ci"

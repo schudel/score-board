@@ -1,0 +1,14 @@
+@import "../../../../themes/variables";
+
+.match-container {
+
+  .edit-create-buttons {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    button {
+      margin-left: 5px;
+    }
+  }
+}

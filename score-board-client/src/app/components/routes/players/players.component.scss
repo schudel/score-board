@@ -1,0 +1,41 @@
+.players-container {
+  width: 100%;
+
+  .game-selector {
+    width: auto;
+    padding-left: 10px;
+    display: inline-block;
+
+    mat-card {
+      padding-bottom: 0;
+      margin-bottom: 10px;
+    }
+  }
+  .player-info-container {
+    float:left;
+    width: 368px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .player-info-container:first-child {
+    /*margin-left: 0;*/
+  }
+  .player-info-container:last-child {
+    /*margin-right: 0;*/
+  }
+}
+.dark-theme {
+  .players-container {
+    mat-form-field {
+      color: rgba(255, 255, 255, 1);
+
+      .mat-select-value {
+        color: rgba(255, 255, 255, 1);
+      }
+      label {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}

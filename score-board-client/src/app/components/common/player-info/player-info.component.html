@@ -1,0 +1,97 @@
+<div class="player-info">
+  <mat-card class="mat-elevation-z3">
+    <mat-card-header>
+      <img mat-card-image src="../../../../assets/media/bg-1.jpg" alt="Background Image">
+      <img *ngIf="playerInternal && playerInternal.image" mat-card-avatar [src]="playerInternal.image" alt="Avatar">
+      <img *ngIf="playerInternal && !playerInternal.image" mat-card-avatar src="../../../../assets/media/avatar-placeholder.png" alt="Avatar">
+      <span *ngIf="playerInternal" class="case" [routerLink]="'/player/view/' + playerInternal.id"></span>
+      <div *ngIf="playerInternal" class="mat-card-header-text">
+        <mat-card-title>{{playerInternal.playerName}}</mat-card-title>
+        <mat-card-subtitle>{{playerInternal.firstName}} {{playerInternal.lastName}}</mat-card-subtitle>
+        <mat-card-subtitle>{{playerInternal.email}}</mat-card-subtitle>
+      </div>
+      <mat-chip-list *ngIf="rating">
+        <mat-chip selected color="accent" class="animated zoomIn">
+          <span class="bold"># {{getRanking(rating) | number}}</span>
+        </mat-chip>
+      </mat-chip-list>
+    </mat-card-header>
+    <mat-card-content>
+      <table *ngIf="playerInternal" >
+        <tr>
+          <td class="label" i18n>Role:</td>
+          <td class="value">{{playerInternal.roleName}}</td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Registered since:</td>
+          <td class="value">{{getDate(playerInternal.registrationDate) | date : getDateFormat() }}</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="divider"><mat-divider></mat-divider></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <mat-form-field class="select-game">
+              <mat-label i18n>Select Game</mat-label>
+              <mat-select [(value)]="gameId" (valueChange)="changeGame($event)" [disabled]="disableGameSelection">
+                <mat-option *ngFor="let game of games" [value]="game.id">
+                  {{game.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Ranking:</td>
+          <td class="value" *ngIf="rating"># {{getRanking(rating) | number}}</td>
+          <td class="value" *ngIf="!rating"></td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Conservative Rating:</td>
+          <td class="value" *ngIf="rating">{{rating.conservativeRating | number}}</td>
+          <td class="value" *ngIf="!rating"></td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Mean:</td>
+          <td class="value" *ngIf="rating">{{rating.mean | number}}</td>
+          <td class="value" *ngIf="!rating"></td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Standard Deviation:</td>
+          <td class="value" *ngIf="rating">{{rating.standardDeviation | number}}</td>
+          <td class="value" *ngIf="!rating"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="divider"><mat-divider></mat-divider></td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Played Matches:</td>
+          <td class="value">{{getGamesCount()}}</td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Won Matches:</td>
+          <td class="value">{{getWonGames()}}</td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Lost Matches:</td>
+          <td class="value">{{getLostGames()}}</td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Drawn Matches:</td>
+          <td class="value">{{getDrawnGames()}}</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="divider"><mat-divider></mat-divider></td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Favorite Game:</td>
+          <td class="value">{{favoriteGame}}</td>
+        </tr>
+        <tr>
+          <td class="label" i18n>Favorite Team Member:</td>
+          <td class="value">{{favoriteTeamMember}}</td>
+        </tr>
+      </table>
+    </mat-card-content>
+  </mat-card>
+</div>

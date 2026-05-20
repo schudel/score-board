@@ -1,0 +1,10 @@
+<div class="player-container animated fadeIn">
+  <div *ngIf="games" [@cardAnimation]="games.length" @plusAnimation>
+    <div class="player-info-container" *ngFor="let game of games">
+      <app-player-info [game]="game" [ratings]="ratings" [matches]="matches" [player]="player" [favoriteGame]="getFavoriteGame()" [favoriteTeamMember]="getFavoriteTeamMember()" disableGameSelection="true"></app-player-info>
+    </div>
+  </div>
+  <div *ngIf="games.length === 0">
+    <h2 i18n>There is no match data available for this player.</h2>
+  </div>
+</div>

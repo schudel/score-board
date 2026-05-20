@@ -1,0 +1,30 @@
+<div class="statistics-container animated fadeIn">
+  <mat-card>
+    <mat-card-title i18n>Statistics</mat-card-title>
+    <mat-card-content>
+      <mat-tab-group [selectedIndex]="selected.value"
+                     (selectedIndexChange)="selected.setValue($event)">
+        <mat-tab>
+          <ng-template matTabLabel>
+            <span i18n>Players</span>
+          </ng-template>
+          <app-players-statistics *ngIf="selected.value === 0" [players]="players" [matches]="matches"></app-players-statistics>
+        </mat-tab>
+        <mat-tab>
+          <ng-template matTabLabel>
+            <span i18n>Games</span>
+          </ng-template>
+          <app-games-statistics *ngIf="selected.value === 1"  [games]="games" [matches]="matches"></app-games-statistics>
+        </mat-tab>
+        <!--
+        <mat-tab>
+          <ng-template matTabLabel>
+            <span i18n>Matches</span>
+          </ng-template>
+          <app-matches-statistics *ngIf="selected.value === 2"></app-matches-statistics>
+        </mat-tab>
+        -->
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div>

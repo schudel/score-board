@@ -1,0 +1,25 @@
+<!-- Overlay and Constellation effect -->
+<div class="global-overlay" style="opacity: 1; transform: translateX(100%);">
+  <canvas id="constellationel"></canvas>
+  <!--<div class="overlay skew-part"></div>-->
+</div>
+<div class="main-container" [ngClass]="{'dark-theme': isDarkTheme}">
+  <div class="main-content" [ngClass]="{'full-height' : !currentPlayer}">
+    <app-navigation *ngIf="currentPlayer" (menuButtonClicked)="sidenav.toggle()" (panelButtonClicked)="sidenav2.toggle()"></app-navigation>
+    <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav mode="over" class="menu-panel">
+        <app-side-menu *ngIf="currentPlayer" (menuButtonClicked)="sidenav.toggle()"></app-side-menu>
+      </mat-sidenav>
+      <mat-sidenav #sidenav2 position="end" mode="over" class="quick-panel">
+        <app-quick-panel *ngIf="currentPlayer"></app-quick-panel>
+      </mat-sidenav>
+      <main id="content">
+        <router-outlet ></router-outlet>
+      </main>
+      <footer>
+        <app-footer></app-footer>
+      </footer>
+    </mat-sidenav-container>
+  </div>
+</div>
+<app-loading-screen></app-loading-screen>

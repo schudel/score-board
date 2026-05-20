@@ -1,0 +1,56 @@
+@import "../../../../themes/themes";
+
+.widget-selector {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  .selector {
+    padding: 10px;
+
+    mat-form-field {
+      width: 100%;
+    }
+
+    .remove-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .widget-container {
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(100% - 110px);
+    padding: 10px;
+    overflow: auto;
+
+    .widget-selector-overlay {
+      position: absolute;
+      left: 10px;
+      top: 0;
+      width: calc(100% - 20px);
+      height: calc(100% - 5px);
+      z-index: 5;
+      cursor: move;
+    }
+  }
+}
+.dark-theme {
+  .widget-selector {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+
+    .selector {
+      button.remove-button {
+        color: mat-color($dark-accent) !important;
+      }
+    }
+  }
+  .cdk-overlay-container {
+    .mat-option-text {
+      color: #ffffff !important;
+    }
+  }
+}

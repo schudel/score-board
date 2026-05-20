@@ -1,0 +1,86 @@
+# Comprehensive .gitignore for score-board
+# Angular + .NET Core + general development
+
+# ─── .NET / Visual Studio ────────────────────────────────────────────────────
+## Build outputs
+/score-board-server/*/bin/
+/score-board-server/*/obj/
+
+## User-specific files
+*.rsuser
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.idea/
+score-board-server/.idea
+
+## User secrets (NEVER commit)
+secrets.json
+usersecrets.json
+
+## Publish profiles
+/score-board-server/*/*.pubxml
+/score-board-server/*/*.pubxml.user
+/score-board-server/ScoreBoard.API/Properties/PublishProfiles/
+
+## Logs
+/score-board-server/ScoreBoard.API/logs/
+*.log
+logs/
+
+## NuGet packages
+.nuget/
+*.nupkg
+*.snupkg
+
+## Test results
+TestResults/
+
+# ─── Angular / Node.js ───────────────────────────────────────────────────────
+node_modules/
+dist/
+.angular/
+
+## npm debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Build outputs
+/score-board-client/dist/
+/score-board-redirect/dist/
+
+## Coverage
+/coverage/
+/score-board-client/coverage/
+/score-board-redirect/coverage/
+
+# ─── Secrets & Credentials (NEVER commit) ────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pfx
+*.pem
+*.key
+*.p12
+*.cer
+appsettings.Production.json
+appsettings.Staging.json
+
+# ─── macOS ───────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+._*
+
+# ─── Windows ─────────────────────────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ─── Editors ─────────────────────────────────────────────────────────────────
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.vscode/launch.json

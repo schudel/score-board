@@ -1,0 +1,35 @@
+<div class="chat-container">
+  <div #scrollToBottom class="messages" *ngFor="let room of rooms" (scroll)="onScroll($event)">
+    <div class="message-wrapper" *ngFor="let message of room.messageHistory" [ngClass]="{ 'owner' : currentPlayer.id === message.playerId }">
+      <div class="date-time">{{message.timeStamp | date : getDateFormat()}}</div>
+      <div class="message animated fadeIn" [ngClass]="{ 'owner' : currentPlayer.id === message.playerId }">
+        <div class="player">{{message.userName}}</div>
+        <div class="text" [innerHTML]="getSaveHtml(message.message)"></div>
+      </div>
+    </div>
+    <div class="typing-state-wrapper" *ngIf="currentTypingText">
+      <div class="typing-text">{{currentTypingText}}</div>
+      <div class="typing-bubble animated fadeIn"><img src="../../../../assets/media/message.svg" alt="Typing..."></div>
+    </div>
+  </div>
+  <div class="send-message">
+    <form [formGroup]="sendMessageForm" (ngSubmit)="sendMessage()">
+      <div class="quill-container">
+        <quill-editor #quillEditor [styles]="{height: '70px'}" formControlName="message" [modules]="modules"
+                      (onEditorChanged)="changedEditor($event)"
+                      (keydown)="onKeydown($event)" [maxLength]="2000"></quill-editor>
+      </div>
+      <div class="send-button-container">
+        <button type="submit" mat-stroked-button color="accent" i18n>Send</button>
+
+        <div class="giphy-button-container">
+          <app-giphy (giphyImageSelected)="onGiphyImageSelected($event)"></app-giphy>
+        </div>
+        <div class="emoji-button-container">
+          <button type="submit" mat-stroked-button color="accent" (click)="toggleEmojiPicker()" i18n>Emoji</button>
+          <emoji-mart class="emoji-mart mat-elevation-z9" isNative="true" (emojiSelect)="addEmoji($event)" *ngIf="showEmojiPicker" title="Pick your emoji…"></emoji-mart>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

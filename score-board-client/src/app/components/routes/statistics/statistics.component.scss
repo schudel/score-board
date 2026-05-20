@@ -1,0 +1,10 @@
+.statistics-container {
+  mat-card {
+    margin-bottom: 20px;
+
+    mat-card-content {
+      overflow: initial !important;
+      height: auto;
+    }
+  }
+}

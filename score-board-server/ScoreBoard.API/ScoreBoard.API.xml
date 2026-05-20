@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScoreBoard.API</name>
+    </assembly>
+    <members>
+        <member name="M:ScoreBoard.API.Controllers.AuthenticationController.Authenticate(ScoreBoard.API.Dtos.AuthenticationDto)">
+            <summary>
+            Authenticate with PlayerName and Password
+            </summary>
+            <param name="auth">Authentication Credentials</param>
+            <returns>Authenticated Player</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.AuthenticationController.Register(ScoreBoard.API.Dtos.PlayerDto)">
+            <summary>
+            Register a new Player
+            </summary>
+            <param name="playerDto">New Player</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.AuthenticationController.Activate(System.String)">
+            <summary>
+            Activates the Account by Player Id - This i necessary to complete the registration
+            </summary>
+            <param name="id">Player Id</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.AuthenticationController.ResendEmail(System.String)">
+            <summary>
+            Re-Sends the Registration Email again (in case of faults)
+            </summary>
+            <param name="id">Player Id</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.AuthenticationController.RequestPasswordReset(System.String)">
+            <summary>
+            Request a Password Reset of a Player
+            </summary>
+            <param name="email">Email Address from Player</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.AuthenticationController.ResetPassword(ScoreBoard.API.Dtos.ResetPasswordDto)">
+            <summary>
+            Reset Password of a Player
+            </summary>
+            <param name="resetPasswordDto">Reset Password Dto</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.ChatController.Get">
+            <summary>
+            Get all Chats
+            </summary>
+            <returns>All Chats</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.ChatController.Get(System.String)">
+            <summary>
+            Get Chat by Id
+            </summary>
+            <param name="id">Chat Id</param>
+            <returns>Chat by Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.ChatController.GetByMatchId(System.String)">
+            <summary>
+            Get Chat by Player Id
+            </summary>
+            <param name="playerId">Player Id</param>
+            <returns>Chat by Player Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.ChatController.DeleteAll">
+            <summary>
+            Delete all Chats
+            </summary>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.ChatController.GetTopEntries(System.Int32,System.Int32)">
+            <summary>
+            Get top n Chats
+            </summary>
+            <param name="amount">Select n Entries</param>
+            <param name="skip">Skip n Entries</param>
+            <returns>Top n Chats</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.GameController.Get">
+            <summary>
+            Get all Games.
+            </summary>
+            <returns>All Games</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.GameController.Get(System.String)">
+            <summary>
+            Get Game by Id
+            </summary>
+            <param name="id">Id of Game</param>
+            <returns>Game with Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.GameController.Post(ScoreBoard.API.Dtos.GameDto)">
+            <summary>
+            Add new Game
+            </summary>
+            <param name="gameDto">New Game</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.GameController.Put(System.String,ScoreBoard.API.Dtos.GameDto)">
+            <summary>
+            Update an existing Game
+            </summary>
+            <param name="id">Game Id</param>
+            <param name="gameDto">Updated Game</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.GameController.Delete(System.String)">
+            <summary>
+            Delete Game
+            </summary>
+            <param name="id">Game Id</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.GameController.Count">
+            <summary>
+            Count all Games
+            </summary>
+            <returns>Game Count</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.GameController.GetGenres">
+            <summary>
+            Get all Game Genres
+            </summary>
+            <returns>Game Genres</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.GameController.GetTypes">
+            <summary>
+            Get all Game Types
+            </summary>
+            <returns>Game Types</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.LiveMatchController.Get">
+            <summary>
+            Get all Live Matches
+            </summary>
+            <returns>All Live Matches</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.LiveMatchController.GetAllDistinct">
+            <summary>
+            Get all Live Matches distinct
+            </summary>
+            <returns>All Live Matches distinct</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.LiveMatchController.Get(System.String)">
+            <summary>
+            Get Live Match by Id
+            </summary>
+            <param name="id">Match Id</param>
+            <returns>Live Match by Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.LiveMatchController.GetByMatchId(System.String)">
+            <summary>
+            Get Live Match by Match Id
+            </summary>
+            <param name="matchId">Match Id</param>
+            <returns>Live Match by Match Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.LiveMatchController.DeleteAll">
+            <summary>
+            Delete all Live Matches
+            </summary>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.LiveMatchController.Invite(ScoreBoard.API.Dtos.InvitationDto)">
+            <summary>
+            Invite Player to specific Match
+            </summary>
+            <param name="invitationDto">Invitation</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.Get(System.Boolean)">
+            <summary>
+            Get all Matches
+            </summary>
+            <returns>All Matches</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.Get(System.String,System.Boolean)">
+            <summary>
+            Get Match by Id
+            </summary>
+            <param name="id">Match Id</param>
+            <param name="slim">Load light weight version of matches</param>
+            <returns>Match by Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.GetByGameId(System.String,System.Boolean)">
+            <summary>
+            Get Match by Game Id
+            </summary>
+            <param name="gameId">Game Id</param>
+            <param name="slim">Load light weight version of matches</param>
+            <returns>Match by Game Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.GetByPlayerId(System.String,System.Boolean)">
+            <summary>
+            Get Matches by Player Id
+            </summary>
+            <param name="playerId">Player Id</param>
+            <param name="slim">Load light weight version of matches</param>
+            <returns>Matches for Player Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.Post(ScoreBoard.API.Dtos.MatchDto)">
+            <summary>
+            Add new Match
+            </summary>
+            <param name="matchDto">Net Match</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.Put(System.String,ScoreBoard.API.Dtos.MatchDto)">
+            <summary>
+            Update existing Match
+            </summary>
+            <param name="id">Match Id</param>
+            <param name="matchDto">Updated Match</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.Delete(System.String)">
+            <summary>
+            Delete Match
+            </summary>
+            <param name="id">Match Id</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.Count">
+            <summary>
+            Count all Matches
+            </summary>
+            <returns>Match Count</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.CountByGame(System.String)">
+            <summary>
+            Count Matches by Game
+            </summary>
+            <param name="gameId">Game Id</param>
+            <returns>Match Count</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.MatchController.CountByPlayer(System.String)">
+            <summary>
+            Count Matches by Game
+            </summary>
+            <param name="playerId">Player Id</param>
+            <returns>Match Count</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.PlayerController.Get">
+            <summary>
+            Get all Players
+            </summary>
+            <returns>All Players</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.PlayerController.Get(System.String)">
+            <summary>
+            Get Player by Id
+            </summary>
+            <param name="id">Player Id</param>
+            <returns>Player with Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.PlayerController.Post(ScoreBoard.API.Dtos.PlayerDto)">
+            <summary>
+            Add new Player
+            </summary>
+            <param name="playerDto">New Player</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.PlayerController.Put(System.String,ScoreBoard.API.Dtos.PlayerDto)">
+            <summary>
+            Update existing Player
+            </summary>
+            <param name="id">Player Id</param>
+            <param name="playerDto">Updated Player</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.PlayerController.Delete(System.String)">
+            <summary>
+            Delete Player
+            </summary>
+            <param name="id">Player Id</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.PlayerController.ChangePassword(System.String,ScoreBoard.API.Dtos.ChangePasswordDto)">
+            <summary>
+            Change the current Password
+            </summary>
+            <param name="id">Player Id</param>
+            <param name="changePasswordDto">Current and New Password</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.PlayerController.Settings(System.String,ScoreBoard.API.Dtos.SettingsDto)">
+            <summary>
+            Update Settings of a Player
+            </summary>
+            <param name="id">Player Id</param>
+            <param name="settingsDto">Updated Settings</param>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.PlayerController.Count">
+            <summary>
+            Count all Players
+            </summary>
+            <returns>Player Count</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.Get(System.Boolean)">
+            <summary>
+            Get all existing Ratings
+            </summary>
+            <param name="slim">Load light weight version of ratings</param>
+            <returns>All Ratings</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.Get(System.String,System.Boolean)">
+            <summary>
+            Get Rating by Id
+            </summary>
+            <param name="id">Rating Id</param>
+            <param name="slim">Load light weight version of ratings</param>
+            <returns>Rating</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.CalcAllAndSave">
+            <summary>
+            (Re)Calc all existing Ratings and save to the DB
+            </summary>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.CalcAll">
+            <summary>
+            (Re)Calc all existing Ratings
+            </summary>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.Calc(ScoreBoard.API.Dtos.MatchDto)">
+            <summary>
+            Calc Rating for new Match
+            </summary>
+            <param name="match">Match for Rating calc</param>
+            <returns>Ratings for Match</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.CalcAndSave(ScoreBoard.API.Dtos.MatchDto)">
+            <summary>
+            Calc Rating for one new Match and save to DB
+            </summary>
+            <param name="match">Match for Rating calc</param>
+            <returns>Ratings for Match</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.ReCalcAndSave(System.String)">
+            <summary>
+            (Re)Calc existing Rating for one new Match and save to DB
+            </summary>
+            <param name="id">Match Id for Rating calc</param>
+            <returns>Ratings for Match</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.CalcMatchQuality(ScoreBoard.API.Dtos.MatchDto)">
+            <summary>
+            Calc Quality for new Match
+            </summary>
+            <param name="match">Match for Quality calc</param>
+            <returns>Quality for Match</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.CalcMatchQualityAndSave(ScoreBoard.API.Dtos.MatchDto)">
+            <summary>
+            Calc Quality for new Match and save to DB
+            </summary>
+            <param name="match">Match for Quality calc</param>
+            <returns>Quality for Match</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.ReCalcMatchQualityAndSave(System.String)">
+            <summary>
+            (Re)Calc Quality for existing Match and save to DB
+            </summary>
+            <param name="id">Match id for Quality calc</param>
+            <returns>Quality for Match</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.CalcAllMatchQualitiesAndSave">
+            <summary>
+            (Re)Calc all existing Match Qualities and save to the DB
+            </summary>
+            <returns>Ok</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.GetByPlayerId(System.String)">
+            <summary>
+            Get Ratings by Player Id
+            </summary>
+            <param name="playerId">Player Id</param>
+            <returns>Ratings for Player Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.CalcAllRatingHistories">
+            <summary>
+            Calculates and returns complete Rating History
+            </summary>
+            <returns>Rating History List</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.CalcAllRatingHistoriesAndSave">
+            <summary>
+            Calculates and returns complete Rating History and save them to DB
+            </summary>
+            <returns>Rating History List</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.RatingController.GetAllRatingHistories">
+            <summary>
+            Get the complete Rating History
+            </summary>
+            <returns>Rating History List</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.TeamController.Get">
+            <summary>
+            Get all Teams
+            </summary>
+            <returns>All Teams</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.TeamController.Get(System.String)">
+            <summary>
+            Get Team by Id
+            </summary>
+            <param name="id">Team Id</param>
+            <returns>Team by Id</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+        <member name="M:ScoreBoard.API.Controllers.TeamController.GetTeamNames">
+            <summary>
+            Get all Team-Names
+            </summary>
+            <returns>All Team-Names</returns>
+            <response code="200">Ok</response>
+            <response code="500">If there was an internal server error</response>
+            <response code="401">If unauthorized</response>
+        </member>
+    </members>
+</doc>

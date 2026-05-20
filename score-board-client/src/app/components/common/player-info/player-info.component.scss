@@ -1,0 +1,122 @@
+.player-info {
+  height: 100%;
+  width: 100%;
+
+  .bold {
+    font-weight: bold;
+  }
+
+  mat-card {
+    border-radius: 0;
+    width: 100%;
+    padding: 0;
+
+    mat-card-header {
+      height: 112px;
+      position: relative;
+
+      .mat-card-avatar {
+        z-index: 1;
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        margin-top: 17px;
+      }
+      .mat-card-header-text {
+        position: absolute;
+        z-index: 1;
+        width: calc(100% - 120px);
+        margin-left: 105px;
+      }
+      mat-card-title {
+        margin-top: 30px;
+        white-space: nowrap;
+        width: calc(100% - 30px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #dddddd;
+      }
+      mat-card-subtitle  {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #dddddd;
+      }
+
+      .mat-card-image  {
+        position: absolute;
+        z-index: 0;
+        margin: 0;
+        width: 100%;
+        height: 112px;
+      }
+
+      mat-chip {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+    }
+    mat-card-header .case {
+      position: absolute;
+      display: inline-block;
+      z-index: 2;
+      width: 80px;
+      height: 80px;
+      left: 10px;
+      top: 17px;
+      border-radius: 50%;
+      transition: all 0.3s ease-out;
+      cursor: pointer;
+    }
+    mat-card-header:hover .case {
+      box-shadow: 0 0 0 15px rgba(10, 111, 149, 0.7) inset;
+    }
+    .mat-card-content {
+      overflow: auto;
+      margin-top: 10px;
+      height: calc(100% - 122px);
+
+      table {
+        width: 100%;
+        margin-bottom: 10px;
+
+        tr {
+          td.label {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            text-align: right;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 184px;
+          }
+          td.value {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 184px;
+          }
+
+          mat-form-field {
+            width: calc(100% - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .divider {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        mat-divider {
+          position: initial;
+        }
+      }
+    }
+  }
+}

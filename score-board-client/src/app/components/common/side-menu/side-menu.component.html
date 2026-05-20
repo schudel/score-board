@@ -1,0 +1,15 @@
+<mat-nav-list>
+  <a (click)="onMenuButtonClicked()" routerLink="/dashboard" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-tachometer-alt"></i><ng-container i18n="@@dashboardMenuText">Dashboard</ng-container></a>
+  <a (click)="onMenuButtonClicked()" routerLink="/live" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-video"></i><ng-container i18n="@@liveMenuText">Live</ng-container></a>
+  <a (click)="onMenuButtonClicked()" routerLink="/games" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-gamepad"></i><ng-container i18n="@@gameMenuText">Games</ng-container></a>
+  <a (click)="onMenuButtonClicked()" routerLink="/players" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-users"></i><ng-container i18n="@@playersMenuText">Players</ng-container></a>
+  <a (click)="onMenuButtonClicked()" routerLink="/matches" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-handshake"></i><ng-container i18n="@@matchesMenuText">Matches</ng-container></a>
+  <a (click)="onMenuButtonClicked()" routerLink="/ranking" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-star"></i><ng-container i18n="@@rankingMenuText">Ranking</ng-container></a>
+  <a (click)="onMenuButtonClicked()" routerLink="/statistics" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-chart-bar"></i><ng-container i18n="@@statisticsMenuText">Statistics</ng-container></a>
+  <a *ngIf="isAdmin" (click)="onMenuButtonClicked()" routerLink="/admin" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-user-shield"></i><ng-container i18n="@@adminMenuText">Admin</ng-container></a>
+  <mat-divider></mat-divider>
+  <a (click)="onMenuButtonClicked()" routerLink="/profile" [queryParams]="{tab: 'personal-information'}" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-user"></i><ng-container i18n="@@personalInformationMenuText">Personal Information</ng-container></a>
+  <a (click)="onMenuButtonClicked()" routerLink="/profile" [queryParams]="{tab: 'change-password'}" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-key"></i><ng-container i18n="@@changePasswordMenuText">Change Password</ng-container></a>
+  <a (click)="onMenuButtonClicked()" routerLink="/profile" [queryParams]="{tab: 'profile-settings'}" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-cog"></i><ng-container i18n="@@settingsMenuText">Settings</ng-container></a>
+  <a (click)="logout()" mat-list-item routerLinkActive="mat-accent"><i class="fas fa-sign-out-alt"></i><ng-container i18n="@@logoutMenuText">Logout</ng-container></a>
+</mat-nav-list>

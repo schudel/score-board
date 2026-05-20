@@ -1,0 +1,20 @@
+<div class="giphy-container">
+  <mat-card *ngIf="showGiphySearch" class="giphy-search mat-elevation-z9">
+    <mat-card-content>
+      <form [formGroup]="giphyForm" (ngSubmit)="searchGiphy()">
+        <mat-form-field>
+          <input type="text" matInput appAutofocus placeholder="Search for a GIF" name="giphy" formControlName="giphySearchTerm" i18n-placeholder>
+        </mat-form-field>
+      </form>
+      <div class="search-results" (scroll)="onScroll($event)">
+        <div class="gif-result" *ngFor="let result of giphyResults">
+          <img *ngIf="result.images" src="{{ result.images.preview_gif.url }}" (click)="sendGif(result.title, result.images.downsized_medium.url)">
+        </div>
+      </div>
+      <div class="powered-by">
+        <img src="../../../../assets/media/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" alt="Powered By GIPHY">
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <button type="button" mat-stroked-button color="accent" (click)="toggleGiphySearch()" i18n>GIF</button>
+</div>

@@ -1,0 +1,35 @@
+.games-container {
+
+  .filter-field {
+    width: 100%;
+  }
+  .edit-create-buttons {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    button {
+      margin-left: 5px;
+    }
+  }
+
+  mat-card {
+    margin-bottom: 20px;
+
+    mat-card-content {
+      overflow: initial !important;
+      height: auto;
+    }
+  }
+  table {
+    width: 100%;
+
+    td {
+
+      img {
+        height: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,294 @@
+@import "../../../../themes/variables";
+
+.match-detail-container {
+  .edit-create-buttons {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    button {
+      margin-left: 5px;
+    }
+  }
+  form {
+    padding: 20px;
+
+    mat-chip-list {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+
+      mat-chip {
+        font-weight: bold;
+      }
+    }
+    .team-count-down {
+      position: absolute;
+      left: 20px;
+      top: 45px;
+    }
+    .team-count-down:disabled {
+      color: white;
+      background: #ff4081;
+    }
+    .team-count-up {
+      position: absolute;
+      right: 20px;
+      top: 45px;
+    }
+    .team-count-up:disabled {
+      color: white;
+      background: #ff4081;
+    }
+    .button-container {
+      margin-top: 15px;
+    }
+    .error {
+      margin-bottom: 10px;
+    }
+    .date-time-picker-form-field {
+      width: 180px;
+    }
+    .display-none {
+      display: none;
+    }
+    .teams-container {
+      display: flex;
+      /*
+      align-items: center;
+      justify-content: left;
+       */
+      width: 100%;
+      margin-bottom: 15px;
+
+      .team-mat-form-field {
+        width: 100%;
+      }
+      .score-mat-form-field {
+        width: 100%;
+        input {
+          text-align: center;
+          font-size: 65px;
+          color: #ff4081;
+        }
+      }
+    }
+    .team-container {
+      position: relative;
+      margin: 10px;
+      padding: 10px;
+      float: left;
+      border: 1px solid lightgray;
+      width: 270px;
+      min-height: 200px;
+      background: url($team-container-bg-url);
+      background-size: cover;
+      border-radius: 5px;
+
+      mat-form-field {
+        color: rgba(255, 255, 255, 1);
+
+        input {
+          color: rgba(255, 255, 255, 1);
+        }
+        label {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+    .versus-container {
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      .live-duration-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      .finish-live-match-button-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+
+        button:disabled {
+          color: white;
+          background: #ff4081;
+        }
+      }
+
+      img {
+        height: 250px;
+        width: 250px;
+      }
+    }
+    .players-drag-container {
+      padding: 10px;
+      margin: 10px;
+      border: 2px dashed lightgray;
+
+      .player-list {
+        justify-content: normal;
+
+        .player-entry {
+          cursor: move;
+        }
+      }
+    }
+    .player-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: calc(100% - 48px);
+      overflow: hidden;
+      min-height: 113px;
+
+      .player-entry {
+        width: 100px;
+        height: 75px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid lightgray;
+        text-align: center;
+        background: #ffffff;
+        border-radius: 5px;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        .player-name {
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-top: 5px;
+        }
+      }
+    }
+    .player-list.editable {
+      border: 2px dashed lightgray;
+      .player-entry {
+        cursor: move;
+      }
+    }
+    .player-list.small-list {
+      height: calc(100% - 170px);
+    }
+    .player-list.medium-list {
+      height: calc(100% - 60px);
+    }
+    .invitation-container {
+      margin-bottom: 10px;
+    }
+  }
+}
+.match-game-image-container,
+.match-player-image-container{
+  margin-right: 5px;
+  float: left;
+  margin-top: 8px;
+
+  .match-game-image,
+  .match-player-image{
+    width: 25px;
+    height: 25px;
+  }
+}
+.cdk-drag-preview {
+  text-align: center;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100px;
+  height: 75px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+  0 8px 10px 1px rgba(0, 0, 0, 0.14),
+  0 3px 14px 2px rgba(0, 0, 0, 0.12);
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  .player-name {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.cdk-drag-placeholder {
+  /*opacity: 0;*/
+  width: 100px;
+  height: 75px;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px dashed lightgray;
+  border-radius: 5px;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.player-list.cdk-drop-list-dragging .player-entry:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.dark-theme {
+  .cdk-drag-preview {
+    background: rgba(0, 0, 0, 0.8) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  }
+  .cdk-drag-placeholder {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 1px dashed rgba(255, 255, 255, 0.12) !important;
+  }
+  .match-detail-container {
+    form {
+      .versus-container {
+        .finish-live-match-button-container {
+          button:disabled {
+            color: black !important;
+            background: #ffd740 !important;
+          }
+        }
+      }
+      .team-count-down:disabled {
+        color: black !important;
+        background: #ffd740 !important;
+      }
+      .team-count-up:disabled {
+        color: black !important;
+        background: #ffd740 !important;
+      }
+      .teams-container {
+        .score-mat-form-field {
+          input {
+            color: #ffd740 !important;
+          }
+        }
+      }
+      .team-container {
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      }
+      .players-drag-container {
+        border: 2px dashed rgba(255, 255, 255, 0.12) !important;
+      }
+      .player-list {
+        .player-entry {
+          border: 1px solid rgba(255, 255, 255, 0.12) !important;
+          background: #000000 !important;
+        }
+      }
+      .player-list.editable {
+        /* border: 2px dashed rgba(255, 255, 255, 0.12) !important; */
+      }
+    }
+  }
+}

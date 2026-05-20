@@ -1,0 +1,2015 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de-de" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="dashboardMenuText" datatype="html">
+        <source>Dashboard</source>
+		<target>Übersichtsseite</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="liveMenuText" datatype="html">
+        <source>Live</source>
+		<target>Aktiv</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameMenuText" datatype="html">
+        <source>Games</source>
+		<target>Spiele</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="playersMenuText" datatype="html">
+        <source>Players</source>
+		<target>Spieler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="matchesMenuText" datatype="html">
+        <source>Matches</source>
+		<target>Partien</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rankingMenuText" datatype="html">
+        <source>Ranking</source>
+		<target>Rangliste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="statisticsMenuText" datatype="html">
+        <source>Statistics</source>
+		<target>Statistiken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adminMenuText" datatype="html">
+        <source>Admin</source>
+		<target>Verwalten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="personalInformationMenuText" datatype="html">
+        <source>Personal Information</source>
+		<target>Persönliche Informationen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="changePasswordMenuText" datatype="html">
+        <source>Change Password</source>
+		<target>Passwort ändern</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settingsMenuText" datatype="html">
+        <source>Settings</source>
+		<target>Einstellungen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logoutMenuText" datatype="html">
+        <source>Logout</source>
+		<target>Abmelden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/side-menu/side-menu.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="12fd8a3f78a2f8f3b75e26f785e2388b39742c4d" datatype="html">
+        <source>Edit Dashboard</source>
+		<target>Übersichtsseite bearbeiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fc0dffd80ca705192f07f49902257b2b9f1a0903" datatype="html">
+        <source>Save Dashboard</source>
+		<target>Übersichtsseite speichern</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7b35c384aecd25a516200d6921836374613dfe7" datatype="html">
+        <source>Cancel</source>
+		<target>Abbrechen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f246c3d4134198e83d28044f655a85a4ab4938e0" datatype="html">
+        <source>Add Widget</source>
+		<target>Widget hinzufügen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c17dec673772aaa72832f2e3ccb2bb19150519fc" datatype="html">
+        <source>Reset Dashboard</source>
+		<target>Übersichtsseite zurücksetzen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source>
+		<target>Anmelden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/login/login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/login/login.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="08c74dc9762957593b91f6eb5d65efdfc975bf48" datatype="html">
+        <source>Username</source>
+		<target>Benutzername</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/login/login.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+		<target>Passwort</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/login/login.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1fbceb041c7c91e6efc8693ed03e3f7c869c2ff5" datatype="html">
+        <source>stay logged in </source>
+		<target>eingeloggt bleiben </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/login/login.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cfc2f436ec2beffb042e7511a73c89c372e86a6c" datatype="html">
+        <source>Register</source>
+		<target>Registrieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/login/login.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="60bc066798b1d811f4a5c07cc3ec985261c887f6" datatype="html">
+        <source>Password forgotten?</source>
+		<target>Passwort vergessen?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/login/login.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="copyRightText" datatype="html">
+        <source>Copyright © <x id="INTERPOLATION" equiv-text="{{currentYear}}"/>, B. Schudel</source>
+		<target>Urheberrecht © <x id="INTERPOLATION" equiv-text="{{currentYear}}"/>, B. Schudel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/login/login.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/footer/footer.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6eaa079b5678676e003e57beafa8e0f295345c47" datatype="html">
+        <source>Select Game for all Players</source>
+		<target>Spiel für alle Spieler auswählen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/players/players.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71249314fa72f5f9e0d93b8c59f9e148e0ff617f" datatype="html">
+        <source>Games</source>
+		<target>Spiele</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/score-board-info/score-board-info.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/statistics/statistics.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="70a67e04629f6d412db0a12d51820b480788d795" datatype="html">
+        <source>Create</source>
+		<target>Erstellen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/match/match.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/live/live.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5ca707824ab93066c7d9b44e1b8bf216725c2c22" datatype="html">
+        <source>Filter</source>
+		<target>Filter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/ranking-widget/ranking-widget.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a5f9ba9bb9faa8284bcadb1cdbc6aaf969e9c4bb" datatype="html">
+        <source>Image</source>
+		<target>Bild</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+		<target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f61c6867295f3b53d23557021f2f4e0aa1d0b8fc" datatype="html">
+        <source>Type</source>
+		<target>Art</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="81b090ca8b0d1629d26b369ac21fa7c4d3191c0f" datatype="html">
+        <source>Genre</source>
+		<target>Kategorie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4f8b2bb476981727ab34ed40fde1218361f92c45" datatype="html">
+        <source>Details</source>
+		<target>Details</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="6829218544e108e152f5fa72cb79c4ccb82e0d06" datatype="html">
+        <source>View</source>
+		<target>Anzeigen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
+        <source>Edit</source>
+		<target>Bearbeiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/match/match.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="019d4bd6a5690f0cfa0ecf346a4e6bf7f0d8debb" datatype="html">
+        <source>Remove</source>
+		<target>Entfernen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/games/games.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="408cb6073e60c5d966296a3207fc596adca75e01" datatype="html">
+        <source>Admin</source>
+		<target>Verwalten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="36c043351e21ba63a3cbd0ae4cd17dbfb33634ed" datatype="html">
+        <source>Ratings</source>
+		<target>Bewertungen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3c2078b23e8e67e0a557f7d576162b11116c0d67" datatype="html">
+        <source>(Re)Calc All Ratings</source>
+		<target>(Neu-)Berechnung aller Bewertungen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d6134722ce47d0aa67baa7e3b7f2842c9c338865" datatype="html">
+        <source>(Re)Calc All Match Qualities</source>
+		<target>(Neu-)Berechnung aller Spielqualitäten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="11fe97268ab193a42faa28bd4e3adbb74127ca92" datatype="html">
+        <source>(Re)Calc All Rating Histories</source>
+		<target>(Neu-)Berechnung der Bewertungshistorie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="239eeff828264c70b0bdfe5b6c89974ec7dd4922" datatype="html">
+        <source>Chats</source>
+		<target>Chats</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="946d8b1b0af9d588d2ea0a06d7d72cfaf88bdfd5" datatype="html">
+        <source>Delete all Chat Messages</source>
+		<target>Alle Chatnachrichten löschen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7579e16676411be71336c3ba8635ec8cd8f02573" datatype="html">
+        <source>Live</source>
+		<target>Aktiv</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a0ec195195413c88577c6ee5ad17a4ffd27e4956" datatype="html">
+        <source>Delete all Live Matches</source>
+		<target>Alle Live-Spiele löschen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/admin/admin.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7d6573fb998f3a1cf1356623b85850d9d10edaa9" datatype="html">
+        <source>Registration</source>
+		<target>Registrierung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c83b838d845690bcb897f775f53b5316535306dc" datatype="html">
+        <source>First Name</source>
+		<target>Vorname</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="166b2cc65003221ff5f3ec05d5baca41e6821396" datatype="html">
+        <source>Last Name</source>
+		<target>Nachname</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+		<target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/request-password-reset/request-password-reset.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b11b786ae9711684c76c607b7d425e7e32d076e0" datatype="html">
+        <source>Email must be a valid email address</source>
+		<target>Die E-Mail-Adresse muss eine gültige E-Mail-Adresse sein</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/request-password-reset/request-password-reset.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ec93dbe0bf3b8b852deb1a9100b91773c0a65932" datatype="html">
+        <source>Password must have minimum 8 characters</source>
+		<target>Das Passwort muss mindestens 8 Zeichen lang sein</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c1b7e6d75ff4285c7636c67e5ef259629b81725b" datatype="html">
+        <source>Confirm Password</source>
+		<target>Passwort bestätigen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/change-password/change-password.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d5bfa76b96dbf2523d58d44dffe1f558bc0dcb03" datatype="html">
+        <source>Password not confirmed</source>
+		<target>Passwort nicht bestätigt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="268f88ca9f781206d502bdc1a2057d5bc3d929d5" datatype="html">
+        <source>Back to Login</source>
+		<target>Zurück zur Anmeldung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/registration/registration.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/request-password-reset/request-password-reset.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="63661f40bd0f8e482d8b4648b07f58df9f71bd69" datatype="html">
+        <source>404 Page not found</source>
+		<target>404 Seite nicht gefunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="89463fdc4d900d10282504891de0d5aa25235cb8" datatype="html">
+        <source>Activation successful</source>
+		<target>Aktivierung erfolgreich</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/activation/activation.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="31733d9a3e89567dbce49d32fbb547960b2ace6c" datatype="html">
+        <source>Activation failed</source>
+		<target>Aktivierung fehlgeschlagen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/activation/activation.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7363840af015b8bdb65725ddd558879d494e4ae7" datatype="html">
+        <source>Activation was successful. You can now log in.</source>
+		<target>Die Aktivierung war erfolgreich. Du kannst dich jetzt einloggen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/activation/activation.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fbfba6badcbfa2ac58f9de667d5d86d1bf4ea55a" datatype="html">
+        <source>Go to Login</source>
+		<target>Zur Anmeldung gehen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/activation/activation.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5dee1c06418f475ab002dbcfff04a25a8002e992" datatype="html">
+        <source>Something went wrong with the activation of your account. Please click on the following link to get another activation email:</source>
+		<target>Bei der Aktivierung deines Kontos ist etwas schief gelaufen. Bitte klicken Sie auf den folgenden Link, um eine weitere Aktivierungs-E-Mail zu erhalten:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/activation/activation.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3d5071bf653496d4e8c53de44c03560d7fce5c03" datatype="html">
+        <source>Resend email</source>
+		<target>E-Mail erneut versenden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/activation/activation.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="450e28e57284212c18cd3beb79b91cfea5a0d122" datatype="html">
+        <source>My Profile</source>
+		<target>Mein Profil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/profile/profile.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2b16d754538c43298a40b3efa2b957beb1d29f27" datatype="html">
+        <source>Personal Information</source>
+		<target>Persönliche Informationen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/profile/profile.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5edf054f14aa57bc25a28cb7db01956fee53dac8" datatype="html">
+        <source>Change Password</source>
+		<target>Passwort ändern</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/profile/profile.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="121cc5391cd2a5115bc2b3160379ee5b36cd7716" datatype="html">
+        <source>Settings</source>
+		<target>Einstellungen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/profile/profile.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1ae3dcf96b494406b6fd6fbd2f15f7259553bf4d" datatype="html">
+        <source>Current Password</source>
+		<target>Aktuelles Passwort</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/change-password/change-password.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c7014c6360e94b236286b869c3fe0ea9911c0387" datatype="html">
+        <source>New Password</source>
+		<target>Neues Passwort</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/change-password/change-password.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="809e886bce9a6146a060db6e87134e17f67d16b9" datatype="html">
+        <source>Password must have minimum 8 characters</source>
+		<target>Das Passwort muss mindestens 8 Zeichen lang sein</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/change-password/change-password.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0d09705f4c3afe4285cde27e25415a7e570273c0" datatype="html">
+        <source>Password not confirmed</source>
+		<target>Passwort nicht bestätigt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/change-password/change-password.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+		<target>Speichern</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/change-password/change-password.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/profile-settings/profile-settings.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7e218a32e026839afc8214a083425e91466b884" datatype="html">
+        <source>Drop new Image here!</source>
+		<target>Neues Bild hier hineinziehen!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ac67f87abbdd1a01a51c0177e86c958aef16755c" datatype="html">
+        <source>Browse Files</source>
+		<target>Dateien durchsuchen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d0ba46fbb52ce1c11ff6da3852793e21c1a9ba57" datatype="html">
+        <source>Remove Image</source>
+		<target>Bild entfernen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b70425672efc33762ff7f185958f95f706394f0c" datatype="html">
+        <source>Email must be a valid email address</source>
+		<target>Die E-Mail-Adresse muss eine gültige E-Mail-Adresse sein</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c36a66f2107e8da5371ebc9d15c2008dff567f46" datatype="html">
+        <source>Role</source>
+		<target>Rolle</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ace25fd728578fcce735d7f5ea8a6f639737be7e" datatype="html">
+        <source>Registered since</source>
+		<target>Registriert seit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/perosnal-information/perosnal-information.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fe46ccaae902ce974e2441abe752399288298619" datatype="html">
+        <source>Language</source>
+		<target>Sprache</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/profile-settings/profile-settings.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ab48f0ca3ad58581e7ee4e009abfe5121c7abd15" datatype="html">
+        <source>Dark Theme</source>
+		<target>Dunkles Design</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/profile-settings/profile-settings.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="41aac9cecddc9f345c263d3742192e68e227e413" datatype="html">
+        <source>Menu</source>
+		<target>Menü</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="623c2093ff1ef505300e7baa7a734a1e0a065595" datatype="html">
+        <source>Scoreboard</source>
+		<target>Scoreboard</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1e97210cf9341f5dd93550693c54e4305fca75d0" datatype="html">
+        <source>Hi, <x id="INTERPOLATION" equiv-text="{{currentPlayer.playerName}}"/></source>
+        <target>Hallo, <x id="INTERPOLATION" equiv-text="{{currentPlayer.playerName}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="66cfd97fff964f87aef510756a058917cc92cb9c" datatype="html">
+        <source>Quick Panel</source>
+		<target>Schnellauswahl</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navigation/navigation.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8bcabdf6b16cad0313a86c7e940c5e3ad7f9f8ab" datatype="html">
+        <source>Notifications</source>
+		<target>Benachrichtigungen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/quick-panel/quick-panel.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5adf337be1ad12c915ae18012f1bfa1f2ca4628b" datatype="html">
+        <source>Chat</source>
+		<target>Chat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/quick-panel/quick-panel.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
+        <source>Close</source>
+		<target>Schliessen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/notifications/notifications.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="99ee4faa69cd2ea8e3678c1f557c0ff1f05aae46" datatype="html">
+        <source>Clear</source>
+		<target>Löschen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/notifications/notifications.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacyPolicyMenuText" datatype="html">
+        <source>Privacy policy</source>
+		<target>Datenschutzerklärung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/footer/footer.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="disclaimerMenuText" datatype="html">
+        <source>Disclaimers</source>
+		<target>Haftungsausschluss</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/footer/footer.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b8d10cd55fae4e4ad4f87d28e18251694f159bf7" datatype="html">
+        <source>Privacy Policy</source>
+		<target>Datenschutzerklärung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f16f3e899f396b0514825507f8f51ff1100754d5" datatype="html">
+        <source>Disclaimers</source>
+		<target>Haftungsausschluss</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/disclaimers/disclaimers.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2c5ff8fa9c9aaec93f97e37c9a0edcd797194573" datatype="html">
+        <source>Send</source>
+		<target>Senden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/chat/chat.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bbbb1ba89510a8aaed795a498af115762dd55eb4" datatype="html">
+        <source>Emoji</source>
+		<target>Emoji</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/chat/chat.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fe85c4fbbaf58250de4a57e8595dbc9bafe8713b" datatype="html">
+        <source>Role:</source>
+		<target>Rolle:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="346fdb94c8f04f712eb5c0cafc06f689fedae2c9" datatype="html">
+        <source>Registered since:</source>
+		<target>Registriert seit:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f82538efa967f5df7ee6d9475bf2d438276775fc" datatype="html">
+        <source>Select Game</source>
+		<target>Spiel auswählen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/number-one-widget/number-one-widget.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/ranking-widget/ranking-widget.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/games-statistics/games-statistics.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bee4af49e4ab0e7315c0f9b55159a89dc6a38a45" datatype="html">
+        <source>Ranking:</source>
+		<target>Rangliste:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f82ed3aef6c42c8a32912bf7050bc259a32fa94" datatype="html">
+        <source>Conservative Rating:</source>
+		<target>Konservative Bewertung:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0cd591404b7a8b935f8a6425f11d37af9ea8204f" datatype="html">
+        <source>Mean:</source>
+		<target>Mittelwert:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="014902967a90e588cf3e9e2bed785230c393b5ff" datatype="html">
+        <source>Standard Deviation:</source>
+		<target>Standardabweichung:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e7d9fb1cf55df0832ddab0c42a220e003679a6f" datatype="html">
+        <source>Played Matches:</source>
+		<target>Gespielte Partien:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f3754c9dd392a643a84e1f3c1de79aa5ec78b2c5" datatype="html">
+        <source>Won Matches:</source>
+		<target>Gewonnene Partien:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c38784c38b0dbe1bd714685e0d4952df9c25c4b4" datatype="html">
+        <source>Lost Matches:</source>
+		<target>Verlorene Partien:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="73f085eedeb5494a77941ee7e98b1bcd19688f89" datatype="html">
+        <source>Drawn Matches:</source>
+		<target>Unentschieden:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="01bad29022382606f0156b970474978515c44746" datatype="html">
+        <source>Favorite Game:</source>
+		<target>Lieblingsspiel:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e3a40b22604040b3266a41f2dcc9e0459def7cbe" datatype="html">
+        <source>Favorite Team Member:</source>
+		<target>Bevorzugtes Teammitglied:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/player-info/player-info.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1b78c4c52cc520e59073f5ee88ad16a0aee2a4c0" datatype="html">
+        <source>Games available</source>
+		<target>Verfügbare Spiele</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/score-board-info/score-board-info.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="98e285d6085d82109d7f6cdf1d805c21022630e4" datatype="html">
+        <source>Players</source>
+		<target>Spieler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/score-board-info/score-board-info.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/statistics/statistics.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="54a4c61fe52355ab7f7d9e44046ce9f8c8bb7d0a" datatype="html">
+        <source>Players registered</source>
+		<target>Registrierte Spieler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/score-board-info/score-board-info.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="01aa5508abb4473531a18c605c1c41ae4b6074d0" datatype="html">
+        <source>Matches</source>
+		<target>Partien</target>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/matches/matches.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/score-board-info/score-board-info.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/statistics/statistics.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4256b739a3e49c0b69a19112c1c6ca5808acfa30" datatype="html">
+        <source>Matches played</source>
+		<target>Gespielte Partien</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/score-board-info/score-board-info.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="380e20a1e13d9489c69f6dbea7da19025ab6eb25" datatype="html">
+        <source>Score</source>
+		<target>Punktzahl</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/score-board-info/score-board-info.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea1d0c81a531e154568babc5a115ba0acc500c9a" datatype="html">
+        <source>Highest Score</source>
+		<target>Höchste Punktzahl</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/score-board-info/score-board-info.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0e6a93b6d39a899de3abb0cb10c51f19057fa547" datatype="html">
+        <source>Game</source>
+		<target>Spiel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="999d4eb9e7eb4d7950476183832365c06426f0f7" datatype="html">
+        <source>Team 1</source>
+		<target>Team 1</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5cd36aeff7d9513e941bce66b2902334ef241760" datatype="html">
+        <source>Team 2</source>
+		<target>Team 2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="57077315d76d1e272d8cba32034d0bc93aea10ee" datatype="html">
+        <source>Score 1</source>
+		<target>Punktzahl 1</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="74b60889c00e6e0344761ea98b4252df41dcaa84" datatype="html">
+        <source>Score 2</source>
+		<target>Punktzahl 2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4da0d08aa1eb4eef694150bd23ce83f9daa951c6" datatype="html">
+        <source>State</source>
+		<target>Zustand</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="46a865856763051a3d618ded6ca39ea6100943c5" datatype="html">
+        <source>Match Quality</source>
+		<target>Match-Qualität</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7c0a71d337783e527c1c8e91e433b301c5b1d8a8" datatype="html">
+        <source>Start Time</source>
+		<target>Startzeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="319c5c1bffe05e32358d074f3acf60ce6d000ff8" datatype="html">
+        <source>Stop Time</source>
+		<target>Stoppzeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="a02ea1d4e7424ca989929da5e598f379940fdbf2" datatype="html">
+        <source>Duration</source>
+		<target>Dauer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-list/match-list.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0e69fc7de5d88295ef8ae8938fd34ff5e5327e48" datatype="html">
+        <source>Ranking</source>
+		<target>Rangliste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/ranking-widget/ranking-widget.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/ranking-widget/ranking-widget.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52ba948bd4e5ca9b192253ae962743ced6d0ecde" datatype="html">
+        <source>Player Name</source>
+		<target>Spielername</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/ranking-widget/ranking-widget.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5cf3971726b25cc2041354ada318581433fb3996" datatype="html">
+        <source>Conservative Rating</source>
+		<target>Konservative Bewertung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/ranking-widget/ranking-widget.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="426549221e66f375bef1752a0655c2615f629d8c" datatype="html">
+        <source>Mean</source>
+		<target>Mittelwert</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/ranking-widget/ranking-widget.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="18a68a64eb4bc2f0b056ba0d7c1c604cfe894f83" datatype="html">
+        <source>Standard Deviation</source>
+		<target>Standardabweichung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/ranking-widget/ranking-widget.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3112701f8a387ce3199dcad0ebea41a72c319b06" datatype="html">
+        <source>Select Widget</source>
+		<target>Widget auswählen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/widget-selector/widget-selector.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="df27ec691b9a95ee6b828030ea43ef3517e61591" datatype="html">
+        <source>Recent Matches</source>
+		<target>Neueste Partien</target>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/widget-selector/widget-selector.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="713a562ae337a2d0abb8f20a23d8d99ca78cfc7e" datatype="html">
+        <source>My Matches</source>
+		<target>Meine Partien</target>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/widget-selector/widget-selector.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ae65fea85644c95dd5071c4679a8ba3c0e30e4cb" datatype="html">
+        <source>Epic Matches</source>
+		<target>Epische Partien</target>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/widget-selector/widget-selector.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6c5c5cede415967bd437e8951ff8927ea8d28a3f" datatype="html">
+        <source>Create Game</source>
+		<target>Spiel erstellen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="313fcf0f8dac5ff5800a3e6bd67cb1955089ccca" datatype="html">
+        <source>Beta</source>
+		<target>Beta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="64fe71a9a415dd0dc6e244b7865f6bd752a8e562" datatype="html">
+        <source>Draw Probability</source>
+		<target>Gleichstandswahrscheinlichkeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dbf4303828ecccf199d5a50479a26707d5d3b874" datatype="html">
+        <source>Dynamics Factor</source>
+		<target>Dynamik-Faktor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a1d331f5da745ece68b14b0da871020f6398744d" datatype="html">
+        <source>Initial Conservative Rating</source>
+		<target>Initiale Konservative Bewertung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="496fa10dcea5821a3d7b3c32e7d742768ab592e2" datatype="html">
+        <source>Initial Mean</source>
+		<target>Initialer Mittelwert</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="da9a8d1cc80466eadfd36b31ec09ac3d10d08ab7" datatype="html">
+        <source>Initial Standard Deviation</source>
+		<target>Initiale Standardabweichung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="61e0f26d843eec0b33ff475e111b0c2f7a80b835" datatype="html">
+        <source>Statistics</source>
+		<target>Statistik</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/statistics/statistics.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="31bbfb42c6d04134b033b5d8a2fab476ec2c80cc" datatype="html">
+        <source>Number of played Matches</source>
+		<target>Anzahl der gespielten Partien</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/game/game.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="180092a6b8a6151a05f4a7552a2fb75fd159dfa8" datatype="html">
+        <source>Match</source>
+		<target>Partie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/match/match.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0dbe3778d18afe33972f7927c5b7d0fe3c21ba45" datatype="html">
+        <source>Create Match</source>
+		<target>Partie erstellen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/match/match.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="58d699514dec64e2da2b02c5600a9f40fe44250b" datatype="html">
+        <source>Edit Match</source>
+		<target>Partie bearbeiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/match/match.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="595067a1d3f12077ec2d18f3a2b4dee8db683844" datatype="html">
+        <source>There is no match data available for this player.</source>
+		<target>Für diesen Spieler sind keine Spieldaten verfügbar.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/player/player.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bddc5c6f0a208f66bcbcfb29e037cc2e147b5b33" datatype="html">
+        <source>Live Matches</source>
+		<target>Aktive Partien</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/live/live.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2d4879cdb5779c39e35489afd9f8ea5e6ddc35df" datatype="html">
+        <source>Currently no Live Matches</source>
+		<target>Derzeit keine aktiven Partien</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/live/live.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="77a11f941d66e45257b75832e8f66932b9ee834e" datatype="html">
+        <source>Search for a GIF</source>
+		<target>Suche nach einem GIF</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/giphy/giphy.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f993a9aed42644e5f15097b8484b0a2b0e8554b6" datatype="html">
+        <source>GIF</source>
+		<target>GIF</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/giphy/giphy.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="873b72903b1858a9cd6c8967521030b4d7d1435b" datatype="html">
+        <source>State</source>
+		<target>Zustand</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="da3ce645066fc4f4221fea7b01c0c8d1342e255a" datatype="html">
+        <source>Available Players (Drag &amp; Drop Players to the Team-Containers)</source>
+		<target>Verfügbare Spieler (Drag &amp; Drop Spieler zu den Team-Containern)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="winnerChipText" datatype="html">
+        <source>Winner</source>
+		<target>Sieger</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1507076f79ba88e0f0829cc2a5c2c6a5ce47bfa4" datatype="html">
+        <source>Team Name</source>
+		<target>Teamname</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3ea51cf415feffef55e82c7b60e9486055837661" datatype="html">
+        <source>Finish</source>
+		<target>Beenden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="27b5ad1155903e29d85a3a0a7c86356a2dbdafdc" datatype="html">
+        <source>Start Match</source>
+		<target>Partie starten</target>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+		<context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/widget-selector/widget-selector.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ac4ab188ea1724cdf55055fdfd6a44e49eade2a9" datatype="html">
+        <source>Send Email invitation to Players.</source>
+		<target>Sende eine E-Mail-Einladung an die Spieler.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="140fe8b1dc9a162a1b079a7f04f257ff914c7542" datatype="html">
+        <source>Match Quality</source>
+		<target>Match-Qualität</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/match-detail/match-detail.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4da7b24423632969794a03b20e5f2da058136605" datatype="html">
+        <source>Rating Timeline</source>
+		<target>Bewertungszeitachse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/rating-timeline/rating-timeline.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="d352a0048af4b6c04ab9f85ab643dafdaf3bbc59" datatype="html">
+        <source>Select Player</source>
+		<target>Spieler auswählen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/players-statistics/players-statistics.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9a87fb4b57c6f33303a3980dcd354b670092a940" datatype="html">
+        <source>Played Matches per Game</source>
+		<target>Gespielte Partien pro Spiel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/players-statistics/players-statistics.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="516229c72a7d48d3e7e6659dfbd18fa2675c8467" datatype="html">
+        <source>Won / Lost / Drawn Matches per Game</source>
+		<target>Gewonnene / Verlorene / Unentschiedene Partien pro Spiel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/players-statistics/players-statistics.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a430445917e6b80aba837fe06a19414c2b7dc29" datatype="html">
+        <source>Team Members</source>
+		<target>Team Mitglieder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/players-statistics/players-statistics.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e642896b0bd2f80a14caa4410911234c610056bb" datatype="html">
+        <source>Won / Lost / Drawn Matches per Team</source>
+		<target>Gewonnene / Verlorene / Unentschiedene Partien pro Team</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/games-statistics/games-statistics.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a349140546e58cbb866ec03037575631ffa920ed" datatype="html">
+        <source>Won / Lost / Drawn Matches per Player</source>
+		<target>Gewonnene / Verlorene / Unentschiedene Partien pro Spieler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/games-statistics/games-statistics.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="7083cffe104dfb04e99d682fbfe90cd2c2b49c80" datatype="html">
+        <source>Request Password Reset</source>
+		<target>Anfrage für Passwort zurücksetzen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/request-password-reset/request-password-reset.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a18a56e666b34a4560eb9d9bb58f4aa0076c5b1" datatype="html">
+        <source>Please enter your e-mail address so that we can send you a reset link.</source>
+		<target>Bitte gib deine E-Mail-Adresse ein, damit wir dir ein Zurücksetzungs-Link schicken können.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/request-password-reset/request-password-reset.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d841c8ec24f6b70da7b99914e399b1d5efa5c45" datatype="html">
+        <source>Send Password Reset Link</source>
+		<target>Link senden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/request-password-reset/request-password-reset.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c149e163279d171063f52448f6f3ff84c3f42dfd" datatype="html">
+        <source>The request to change the password has been sent. Please check your e-mail inbox.</source>
+		<target>Die Anfrage zur Änderung des Passworts wurde gesendet. Bitte überprüfe  deinen E-Mail-Eingang.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/request-password-reset/request-password-reset.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="86739334888cb9d50ee6c415b37d9f765f00387a" datatype="html">
+        <source>Reset your Password</source>
+		<target>Passwort zurücksetzen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b663168fbe724e1bf25ab4c9f6c448f12c31b2b" datatype="html">
+        <source>Please choose a new password and confirm it</source>
+        <target>Bitte wähle ein neues Passwort und bestätige es</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4c27b7f16a6fc9c3f0ebd4a29a2b090ef72af63b" datatype="html">
+        <source>Set Password</source>
+        <target>Passwort setzen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/routes/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+	  <trans-unit id="reCalcAllRatingsTitle" datatype="html">
+        <source>Re-Calc all Ratings</source>
+		<target>Alle Bewertungen neu berechnen</target>
+      </trans-unit>
+	  <trans-unit id="reCalcAllRatingsText" datatype="html">
+        <source>Are you sure you want to Re-Calc all Ratings? This could take some time.</source>
+		<target>Bist du sicher, dass du alle Bewertungen neu berechnen möchtest? Dies kann einige Zeit in Anspruch nehmen.</target>
+      </trans-unit>
+	  <trans-unit id="deleteAllChatMessagesTitle" datatype="html">
+        <source>Delete all Chat Messages</source>
+		<target>Alle Chatnachrichten löschen</target>
+      </trans-unit>
+	  <trans-unit id="deleteAllChatMessagesText" datatype="html">
+        <source>Are you sure you want to delete all Chat Messages? This could take some time.</source>
+		<target>Bist du sicher, dass du alle Chatnachrichten löschen möchtest? Dies kann einige Zeit in Anspruch nehmen.</target>
+      </trans-unit>
+      <trans-unit id="timelineChartAxisTitle" datatype="html">
+          <source>Timeline</source>
+          <target>Zeitlinie</target>
+      </trans-unit>
+      <trans-unit id="conservativeRatingChartAxisTitle" datatype="html">
+          <source>Conservative Rating</source>
+          <target>Konservative Bewertung</target>
+      </trans-unit>
+	  <trans-unit id="Scheduled" datatype="html">
+          <source>Scheduled</source>
+          <target>Geplant</target>
+	  </trans-unit>
+	  <trans-unit id="Playing" datatype="html">
+          <source>Playing</source>
+          <target>Am Spielen</target>
+      </trans-unit>
+	  <trans-unit id="Done" datatype="html">
+          <source>Done</source>
+          <target>Fertig</target>
+      </trans-unit>
+	  <trans-unit id="Interrupted" datatype="html">
+          <source>Interrupted</source>
+          <target>Unterbrochen</target>
+      </trans-unit>
+	  <trans-unit id="Aborted" datatype="html">
+          <source>Aborted</source>
+          <target>Abgebrochen</target>
+      </trans-unit>
+	  <trans-unit id="matchSuccessfullyFinishedText" datatype="html">
+          <source>The Match was finished!</source>
+          <target>Die Partie wurde beendet!</target>
+      </trans-unit>
+	  <trans-unit id="matchSuccessfullyFinishedTitle" datatype="html">
+          <source>Finish Match</source>
+          <target>Partie beendet</target>
+      </trans-unit>
+	  <trans-unit id="matchSuccessfullyUpdatedText" datatype="html">
+          <source>The Match was updated!</source>
+          <target>Die Partie wurde aktualisiert!</target>
+      </trans-unit>
+	  <trans-unit id="matchSuccessfullyUpdatedTitle" datatype="html">
+          <source>Update Match</source>
+          <target>Partie Aktualisiert</target>
+      </trans-unit>
+	  <trans-unit id="matchSuccessfullyAddedText" datatype="html">
+          <source>New Match was added!</source>
+          <target>Neue Partie erstellt!</target>
+      </trans-unit>
+	  <trans-unit id="matchSuccessfullyAddedTitle" datatype="html">
+          <source>Add Match</source>
+          <target>Partie erstellen</target>
+      </trans-unit>
+	  <trans-unit id="invalidTitle" datatype="html">
+          <source>Invalid</source>
+          <target>Ungültig</target>
+      </trans-unit>
+	  <trans-unit id="onePlayerInEachTeam" datatype="html">
+          <source>At least one Player has to be in each Team.</source>
+          <target>Mindestens ein Spieler muss in jedem Team sein.</target>
+      </trans-unit>
+	  <trans-unit id="passwordUpdatedText" datatype="html">
+          <source>Your Password has been successfully updated.</source>
+          <target>Dein Passwort wurde erfolgreich aktualisiert.</target>
+      </trans-unit>
+	  <trans-unit id="passwordUpdatedTitle" datatype="html">
+          <source>Update Password successful</source>
+          <target>Passwort erfolgreich aktualisiert</target>
+      </trans-unit>
+	  <trans-unit id="isTypingText" datatype="html">
+          <source>is typing</source>
+          <target>tippt gerade</target>
+      </trans-unit>
+	  <trans-unit id="okButtonText" datatype="html">
+          <source>Ok</source>
+          <target>Ok</target>
+      </trans-unit>
+	  <trans-unit id="cancelButtonText" datatype="html">
+          <source>Cancel</source>
+          <target>Abbrechen</target>
+      </trans-unit>
+	  <trans-unit id="personalUpdatedText" datatype="html">
+          <source>Your Personal Information has been updated.</source>
+          <target>Deine Perönslichen Informationen wurden erfolgreich aktualisiert.</target>
+      </trans-unit>
+	  <trans-unit id="personalUpdatedTitle" datatype="html">
+          <source>Update Personal Information</source>
+          <target>Persönliche Informationen aktualisieren</target>
+      </trans-unit>
+	  <trans-unit id="resizeImageFailedText" datatype="html">
+          <source>Resize Image failed</source>
+          <target>Bildgrösse ändern fehlgeschlagen</target>
+      </trans-unit>
+	  <trans-unit id="onlyOneImageText" datatype="html">
+          <source>You can only upload one Image.</source>
+          <target>Du kannst nur ein Bild hochladen.</target>
+      </trans-unit>
+	  <trans-unit id="imageUploadFailedTitle" datatype="html">
+          <source>Image upload failed</source>
+          <target>Hochladen des Bilds fehlgeschlagen</target>
+      </trans-unit>
+	  <trans-unit id="settingsUpdatedText" datatype="html">
+          <source>Your Settings has been successfully updated.</source>
+          <target>Deine Einstellungen wurden erfolgreich aktualisiert.</target>
+      </trans-unit>
+	  <trans-unit id="settingsUpdatedTitle" datatype="html">
+          <source>Update Settings</source>
+          <target>Einstellungen aktualisieren</target>
+      </trans-unit>
+	  <trans-unit id="darkThemeSettingsResetText" datatype="html">
+          <source>Dark-Theme Settings were reset because the Settings were not saved.</source>
+          <target>Dark-Theme-Einstellungen wurden zurückgesetzt, da die Einstellungen nicht gespeichert wurden.</target>
+      </trans-unit>
+	  <trans-unit id="darkThemeSettingsResetTitle" datatype="html">
+          <source>Dark-Theme Settings</source>
+          <target>Dark-Theme-Einstellungen</target>
+      </trans-unit>
+	  <trans-unit id="updateDashboardText" datatype="html">
+          <source>Your Dashboard Layout has been updated.</source>
+          <target>Deine Übersichtsseite wurde aktualisiert.</target>
+      </trans-unit>
+	  <trans-unit id="updateDashboardTitle" datatype="html">
+          <source>Update Dashboard</source>
+          <target>Übersichtsseite aktualisiert</target>
+      </trans-unit>
+	  <trans-unit id="updateDashboardFailedTitle" datatype="html">
+          <source>Update Dashboard failed</source>
+          <target>Übersichtsseite aktualisieren fehlgeschlagen</target>
+      </trans-unit>
+	  <trans-unit id="registrationHiText" datatype="html">
+          <source>Hi</source>
+          <target>Hallo</target>
+      </trans-unit>
+	  <trans-unit id="registrationSuccessfulText" datatype="html">
+          <source>your registration was successful! Please confirm the Email you just received to complete the activation process.</source>
+          <target>deine Registrierung war erfolgreich! Bitte bestätige die E-Mail, die du gerade erhalten hast, um den Aktivierungsvorgang abzuschliessen.</target>
+      </trans-unit>
+	  <trans-unit id="registrationSuccessfulTitle" datatype="html">
+          <source>Registration successful</source>
+          <target>Registration erfolgreich</target>
+      </trans-unit>
+	  <trans-unit id="removeGameTitle" datatype="html">
+          <source>Remove Game</source>
+          <target>Spiel löschen</target>
+      </trans-unit>
+	  <trans-unit id="removeGameTextPart1" datatype="html">
+          <source>Are you sure you want to remove the Game</source>
+          <target>Möchtest du das Spiel</target>
+      </trans-unit>
+	  <trans-unit id="removeGameTextPart2" datatype="html">
+          <source>with all data</source>
+          <target>mit allen Daten wirklich entfernen</target>
+      </trans-unit>
+	  <trans-unit id="addGameTitle" datatype="html">
+          <source>Add Game</source>
+          <target>Spiel erstellen</target>
+      </trans-unit>
+	  <trans-unit id="addGameTextPart1" datatype="html">
+          <source>The Game</source>
+          <target>Das Spiel</target>
+      </trans-unit>
+	  <trans-unit id="addGameTextPart2" datatype="html">
+          <source>was added</source>
+          <target>wurde erstellt</target>
+      </trans-unit>
+	  <trans-unit id="updateGameTitle" datatype="html">
+          <source>Update Game</source>
+          <target>Spiel aktualisieren</target>
+      </trans-unit>
+	  <trans-unit id="updateGameTextPart1" datatype="html">
+          <source>The Game</source>
+          <target>Das Spiel</target>
+      </trans-unit>
+	  <trans-unit id="updateGameTextPart2" datatype="html">
+          <source>was updated</source>
+          <target>wurde aktualisiert</target>
+      </trans-unit>
+	  <trans-unit id="ScoreBoardInfo" datatype="html">
+          <source>Scoreboard Info</source>
+          <target>Scoreboard Info</target>
+      </trans-unit>
+	  <trans-unit id="NoOneWidget" datatype="html">
+          <source>Number One</source>
+          <target>Nummer Eins</target>
+      </trans-unit>
+	  <trans-unit id="LiveMatches" datatype="html">
+          <source>Live Matches</source>
+          <target>Aktive Partien</target>
+      </trans-unit>
+	  <trans-unit id="RecentMatches" datatype="html">
+          <source>Recent Matches</source>
+          <target>Neueste Partien</target>
+      </trans-unit>
+	  <trans-unit id="MyStatistics" datatype="html">
+          <source>My Statistics</source>
+          <target>Meine Statistik</target>
+      </trans-unit>
+	  <trans-unit id="StartMatch" datatype="html">
+          <source>Start Match</source>
+          <target>Partie starten</target>
+      </trans-unit>
+	  <trans-unit id="MyMatches" datatype="html">
+          <source>My Matches</source>
+          <target>Meine Partien</target>
+      </trans-unit>
+	  <trans-unit id="EpicMatches" datatype="html">
+          <source>Epic Matches</source>
+          <target>Epische Partien</target>
+      </trans-unit>
+	  <trans-unit id="Ranking" datatype="html">
+          <source>Ranking</source>
+          <target>Rangliste</target>
+      </trans-unit>
+	  <trans-unit id="allRatingsRecalculatedText" datatype="html">
+          <source>All Ratings has been successfully recalculated.</source>
+          <target>Alle Bewertungen wurden erfolgreich neu berechnet.</target>
+      </trans-unit>
+	  <trans-unit id="allRatingsRecalculatedTitle" datatype="html">
+          <source>Recalculate Ratings successful</source>
+          <target>Neuberechnung der Bewertungen erfolgreich</target>
+      </trans-unit>
+	  <trans-unit id="allMatchQualitiesRecalculatedText" datatype="html">
+          <source>Are you sure you want to recalculate all Match Qualities? This could take some time.</source>
+          <target>Bist du sicher, dass du alle Spielqualitäten neu berechnen möchtest? Dies kann einige Zeit in Anspruch nehmen.</target>
+      </trans-unit>
+	  <trans-unit id="allMatchQualitiesRecalculatedTitle" datatype="html">
+          <source>Recalculate all Match Qualities</source>
+          <target>Alle Spielqualitäten neu berechnen</target>
+      </trans-unit>
+	  <trans-unit id="allMatchQualitiesRecalculatedSuccessfullyText" datatype="html">
+          <source>All Match Qualities has been successfully recalculated.</source>
+          <target>Alle Spielqualitäten wurden erfolgreich neu berechnet.</target>
+      </trans-unit>
+	  <trans-unit id="allMatchQualitiesRecalculatedSuccessfullyTitle" datatype="html">
+          <source>Recalculate Match Qualities successful</source>
+          <target>Neuberechnung der Spielqualitäten erfolgreich abgeschlossen</target>
+      </trans-unit>
+	  <trans-unit id="allChatMessagesDeletedText" datatype="html">
+          <source>All Chat Messages has been successfully deleted.</source>
+          <target>Alle Chatnachrichten wurden erfolgreich gelöscht.</target>
+      </trans-unit>
+	  <trans-unit id="allChatMessagesDeletedTitle" datatype="html">
+          <source>Delete Chat Messages successful</source>
+          <target>Chatnachrichten erfolgreich gelöscht</target>
+      </trans-unit>
+	  <trans-unit id="allLiveMatchesDeletedText" datatype="html">
+          <source>Are you sure you want to delete all Live Matches? Note: the State of the normal Match will no be changed.</source>
+          <target>Bist du sicher, dass du alle Live-Spiele löschen möchtest? Hinweis: Der Status des normalen Spiels wird nicht geändert.</target>
+      </trans-unit>
+	  <trans-unit id="allLiveMatchesDeletedTitle" datatype="html">
+          <source>Delete all Live Matches</source>
+          <target>Alle Live-Spiele löschen</target>
+      </trans-unit>
+	  <trans-unit id="allLiveMatchesDeletedSuccessfullyText" datatype="html">
+          <source>All Live Matches has been successfully deleted.</source>
+          <target>Alle Live-Spiele wurden erfolgreich gelöscht.</target>
+      </trans-unit>
+	  <trans-unit id="allLiveMatchesDeletedSuccessfullyTitle" datatype="html">
+          <source>Delete Live Matches successful</source>
+          <target>Live-Spiele erfolgreich gelöscht</target>
+      </trans-unit>
+	  <trans-unit id="allReCalcRatingHistoriesText" datatype="html">
+          <source>Are you sure you want to recalculate all Rating Histories? This could take some time.</source>
+          <target>Bist du sicher, dass du alle Bewertungshistorien neu berechnen möchtest? Dies kann einige Zeit in Anspruch nehmen.</target>
+      </trans-unit>
+	  <trans-unit id="allReCalcRatingHistoriesTitle" datatype="html">
+          <source>Recalculate all Rating Histories</source>
+          <target>Alle Bewertungshistorien neu berechnen</target>
+      </trans-unit>
+	  <trans-unit id="allReCalcRatingHistoriesSuccessfullyText" datatype="html">
+          <source>All Rating Histories has been successfully recalculated.</source>
+          <target>Alle Bewertungshistorien wurden erfolgreich neu berechnet.</target>
+      </trans-unit>
+	  <trans-unit id="allReCalcRatingHistoriesSuccessfullyTitle" datatype="html">
+          <source>Recalculate Rating Histories successful</source>
+          <target>Neuberechnung der Bewertungshistorien erfolgreich</target>
+      </trans-unit>
+	  <trans-unit id="gamesStatisticsAllGames" datatype="html">
+          <source>All Games</source>
+          <target>Alle Spiele</target>
+      </trans-unit>
+	  	  <trans-unit id="playersStatisticsAllPlayers" datatype="html">
+          <source>All Players</source>
+          <target>All Spieler</target>
+      </trans-unit>
+	  <trans-unit id="wonLostDrawnMatches" datatype="html">
+          <source>Won / Lost / Drawn Matches</source>
+          <target>Gewonnene / Verlorene / Unentschiedene Partien</target>
+      </trans-unit>
+	  <trans-unit id="statisticsTeams" datatype="html">
+          <source>Teams</source>
+          <target>Teams</target>
+      </trans-unit>
+	  <trans-unit id="statisticsPlayers" datatype="html">
+          <source>Players</source>
+          <target>Spieler</target>
+      </trans-unit>
+	  <trans-unit id="statisticsGames" datatype="html">
+          <source>Games</source>
+          <target>Spiele</target>
+      </trans-unit>
+	  <trans-unit id="statisticsWon" datatype="html">
+          <source>Won</source>
+          <target>Gewonnen</target>
+      </trans-unit>
+	  <trans-unit id="statisticsLost" datatype="html">
+          <source>Lost</source>
+          <target>Verloren</target>
+      </trans-unit>
+	  <trans-unit id="statisticsDrawn" datatype="html">
+          <source>Drawn</source>
+          <target>Unentschieden</target>
+      </trans-unit>
+	  <trans-unit id="statisticsPlayedMatches" datatype="html">
+          <source>Played Matches</source>
+          <target>Gespielte Partie</target>
+      </trans-unit>
+	  <trans-unit id="statisticsTeamMembers" datatype="html">
+          <source>Team Members</source>
+          <target>Teammitglieder</target>
+      </trans-unit>
+	  <trans-unit id="statisticsNoTeamMember" datatype="html">
+          <source>No Team Member</source>
+          <target>Keine Teammitglieder</target>
+      </trans-unit>
+	  <trans-unit id="resetPassword" datatype="html">
+          <source>Reset Password</source>
+          <target>Passwort zurücksetzen</target>
+      </trans-unit>
+	  <trans-unit id="successfullySendPasswordResetEmail" datatype="html">
+          <source>Successfully sent a Password Reset Email</source>
+          <target>Email zum zurücksetzen des Passworts erfolgreich gesendet</target>
+      </trans-unit>
+	  <trans-unit id="successfullyResetPassword" datatype="html">
+          <source>Successfully reset the Password</source>
+          <target>Passwort erfolgreich zurückgesetzt</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

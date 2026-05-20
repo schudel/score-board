@@ -1,0 +1,28 @@
+<div class="profile-container animated fadeIn">
+  <mat-card>
+    <mat-card-title i18n>My Profile</mat-card-title>
+    <mat-card-content>
+      <mat-tab-group [selectedIndex]="selected.value"
+                     (selectedIndexChange)="selected.setValue($event)">
+        <mat-tab>
+          <ng-template matTabLabel>
+            <span i18n>Personal Information</span>
+          </ng-template>
+          <app-perosnal-information></app-perosnal-information>
+        </mat-tab>
+        <mat-tab>
+          <ng-template matTabLabel>
+            <span i18n>Change Password</span>
+          </ng-template>
+          <app-change-password></app-change-password>
+        </mat-tab>
+        <mat-tab>
+          <ng-template matTabLabel>
+            <span i18n>Settings</span>
+          </ng-template>
+          <app-profile-settings></app-profile-settings>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div>

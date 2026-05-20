@@ -1,0 +1,16 @@
+<div class="activation-container">
+  <mat-card>
+    <mat-card-title *ngIf="activationSuccessful" i18n>Activation successful</mat-card-title>
+    <mat-card-title *ngIf="error" i18n>Activation failed</mat-card-title>
+    <mat-card-content>
+      <div *ngIf="activationSuccessful">
+        <h5 i18n>Activation was successful. You can now log in.</h5>
+        <a routerLink="/login" mat-button i18n>Go to Login</a>
+      </div>
+      <div *ngIf="error">
+        <h5 i18n>Something went wrong with the activation of your account. Please click on the following link to get another activation email:</h5>
+        <button mat-button (click)="resendEmail()" i18n>Resend email</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

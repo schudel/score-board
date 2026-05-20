@@ -1,0 +1,20 @@
+<div class="notification-container">
+  <div class="notifications">
+    <div class="notification" *ngFor="let notification of notifications | orderBy:'-dateTime'">
+      <div *ngIf="notification.type == 'Info'" class="type info"><i class="fas fa-info-circle"></i></div>
+      <div *ngIf="notification.type == 'Success'" class="type success"><i class="fas fa-check-circle"></i></div>
+      <div *ngIf="notification.type == 'Warning'" class="type warning"><i class="fas fa-exclamation-triangle"></i></div>
+      <div *ngIf="notification.type == 'Error'" class="type error"><i class="fas fa-times"></i></div>
+      <div *ngIf="notification.type == 'Show'" class="type show"></div>
+      <div class="content">
+        <span class="title">{{notification.title}}</span>
+        <span class="message">{{notification.message}}</span>
+      </div>
+      <span class="date-time">{{notification.dateTime | date : 'short'}}</span>
+      <button class="remove-button" mat-button color="accent" (click)="removeNotification(notification)" matTooltip="Close" i18n-matTooltip><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+  <div class="button-group">
+    <button mat-stroked-button color="accent" (click)="clear()" i18n>Clear</button>
+  </div>
+</div>

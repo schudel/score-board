@@ -1,0 +1,21 @@
+<div class="quick-panel-container ">
+  <mat-tab-group>
+    <mat-tab>
+      <ng-template matTabLabel>
+        <span matBadge="{{notificationsCount}}" matBadgePosition="above after" matBadgeColor="warn" matBadgeHidden="{{!notificationsCount}}" matBadgeOverlap="Notifications" i18n>Notifications</span>
+      </ng-template>
+      <app-notifications></app-notifications>
+    </mat-tab>
+    <!--
+    <mat-tab label="Logs">
+      <h3>TODO: implement</h3>
+    </mat-tab>
+    -->
+    <mat-tab>
+      <ng-template matTabLabel>
+        <span i18n>Chat</span>
+      </ng-template>
+      <app-chat></app-chat>
+    </mat-tab>
+  </mat-tab-group>
+</div>

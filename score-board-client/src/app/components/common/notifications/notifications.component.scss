@@ -1,0 +1,86 @@
+.notification-container {
+  $notification-padding: 20px;
+  position: relative;
+  height: 100%;
+
+  .notifications {
+    position: relative;
+    overflow-y: auto;
+    height: calc(100% - 55px);
+
+    .notification {
+      position: relative;
+      width: calc(100% - #{$notification-padding} * 2);
+      padding: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+      .type {
+        top: 0;
+        left: 9px;
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        font-size: 22px;
+      }
+      .type.info  {
+        color: #2F96B4;
+      }
+      .type.success  {
+        color: #51A351;
+      }
+      .type.warning  {
+        color: #F89406;
+      }
+      .type.error  {
+        color: #BD362F;
+      }
+      .type.show  {
+        color: #000000;
+      }
+      .content {
+        display: inline-block;
+        margin-right: 40px;
+        height: 100%;
+        margin-left: 35px;
+        font-size: 14px;
+
+        .title {
+          display: block;
+          font-weight: bold;
+          word-break: break-word;
+        }
+        .message {
+          display: block;
+          word-break: break-word;
+        }
+      }
+      .date-time {
+        position: absolute;
+        left: 55px;
+        top: 5px;
+        font-size: 11px;
+        color: darkgray;
+      }
+      .remove-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  .button-group {
+    padding: 10px;
+  }
+}
+.dark-theme {
+  .notification-container {
+    .notifications {
+      .notification {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+      }
+    }
+  }
+}

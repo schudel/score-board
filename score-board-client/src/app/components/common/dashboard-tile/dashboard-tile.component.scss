@@ -1,0 +1,30 @@
+@import "../../../../themes/themes";
+
+.dashboard-tile {
+  height: 100%;
+  width: 100%;
+  background-color: mat-color($default-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+.dashboard-tile:hover {
+  background-color: darken(mat-color($default-accent), 10%);
+  cursor: pointer;
+  $white: white;
+  color: darken($white, 10%);
+}
+
+.dark-theme {
+  .dashboard-tile {
+    background-color: mat-color($dark-accent) !important;
+    color: black !important;
+  }
+  .dashboard-tile:hover {
+    background-color: darken(mat-color($dark-accent), 10%) !important;
+    $black: black;
+    color: lighten($black, 10%) !important;
+  }
+}

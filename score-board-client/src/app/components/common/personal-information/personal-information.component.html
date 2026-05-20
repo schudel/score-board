@@ -1,0 +1,51 @@
+<div class="personal-information">
+  <form [formGroup]="personalInfoForm" (ngSubmit)="onSubmit()" fxFlex="100%">
+    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="20px" class="image-container">
+      <img *ngIf="image" mat-card-avatar [src]="image">
+      <img *ngIf="!image" mat-card-avatar src="../../../../assets/media/avatar-placeholder.png">
+      <ngx-file-drop browseBtnClassName="mat-stroked-button mat-accent" dropZoneClassName="image-drop-zone" multiple="false" (onFileDrop)="dropped($event)"
+                     accept="image/*">
+        <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+          <div style="text-align: center" i18n>Drop new Image here!</div><br>
+          <button type="button" (click)="openFileSelector()" i18n>Browse Files</button>
+        </ng-template>
+      </ngx-file-drop>
+      <button mat-stroked-button color="accent" (click)="removeImage()" type="button" i18n>Remove Image</button>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Username" formControlName="playerName" i18n-placeholder required>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="email" matInput placeholder="Email" formControlName="email" i18n-placeholder= required>
+        <mat-error>
+          <div *ngIf="submitted && form.email.errors && form.email.errors.email" class="invalid-feedback" i18n>
+            Email must be a valid email address
+          </div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <mat-form-field>
+        <input type="text" matInput placeholder="First Name" formControlName="firstName" i18n-placeholder>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Last Name" formControlName="lastName" i18n-placeholder>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Role" formControlName="roleName" i18n-placeholder>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Registered since" formControlName="registrationDate" i18n-placeholder>
+      </mat-form-field>
+    </div>
+    <div class="button-container">
+      <mat-error *ngIf="error" class="error">
+        {{ error }}
+      </mat-error>
+      <button type="submit" mat-stroked-button color="accent" i18n>Save</button>
+    </div>
+  </form>
+</div>

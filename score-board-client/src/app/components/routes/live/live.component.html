@@ -1,0 +1,41 @@
+<div class="live-container animated fadeIn">
+  <mat-card>
+    <mat-card-title i18n>Live Matches</mat-card-title>
+    <div class="create-button-container">
+      <button mat-stroked-button color="accent" [routerLink]="'/match/create'" i18n>Create</button>
+    </div>
+    <mat-card-content>
+      <h2 *ngIf="liveMatches.length === 0" i18n>Currently no Live Matches</h2>
+      <mat-accordion multi="true">
+        <mat-expansion-panel *ngFor="let liveMatch of liveMatches" [disabled]="accordionDisabledInternal" [expanded]="expandedMatchId && liveMatch.matchId && liveMatch.matchId.toLowerCase() === expandedMatchId.toLowerCase()">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span>{{liveMatch.timeStamp | date : getDateFormat()}}</span>
+              <span *ngIf="liveMapExtension && liveMapExtension.has(liveMatch.id) && liveMapExtension.get(liveMatch.id).game">&nbsp;-&nbsp;{{liveMapExtension.get(liveMatch.id).game}}</span>
+              <span class="team" *ngIf="liveMapExtension && liveMapExtension.has(liveMatch.id)">
+                &nbsp;-&nbsp;<span *ngIf="liveMapExtension.get(liveMatch.id).team1.name">{{liveMapExtension.get(liveMatch.id).team1.name}}</span>
+                &nbsp;({{liveMapExtension.get(liveMatch.id).team1.player1.playerName}}
+                <span *ngIf="liveMapExtension.get(liveMatch.id).team1.player2">,&nbsp;{{liveMapExtension.get(liveMatch.id).team1.player2.playerName}}</span>)</span>
+              <span class="scores">&nbsp;({{liveMatch.score1}}&nbsp;-&nbsp;{{liveMatch.score2}})</span>
+              <span class="team" *ngIf="liveMapExtension && liveMapExtension.has(liveMatch.id)">
+                &nbsp;-<span *ngIf="liveMapExtension.get(liveMatch.id).team2.name">&nbsp;{{liveMapExtension.get(liveMatch.id).team2.name}}</span>
+                &nbsp;({{liveMapExtension.get(liveMatch.id).team2.player1.playerName}}
+                <span *ngIf="liveMapExtension.get(liveMatch.id).team2.player2">,&nbsp;{{liveMapExtension.get(liveMatch.id).team2.player2.playerName}}</span>)</span>
+            </mat-panel-title>
+            <mat-panel-description>
+              <span class="live-duration" *ngIf="liveMapExtension && liveMapExtension.has(liveMatch.id)">{{liveMapExtension.get(liveMatch.id).liveDurationString}}</span>
+              <span class="state">
+                &nbsp;-&nbsp;{{getTranslatedState(liveMatch.state)}}</span>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <!-- content -->
+          <app-match-detail [isEditMode]="false" [isCreateMode]="false" [isLiveMode]="true" [liveMatch]="liveMatch"
+                            (liveDurationChanged)="onLiveDurationChanged($event, liveMatch)"
+                            (team1Changed)="onTeam1Changed($event, liveMatch)"
+                            (team2Changed)="onTeam2Changed($event, liveMatch)"
+                            (gameChanged)="onGameChanged($event, liveMatch)"></app-match-detail>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
+  </mat-card>
+</div>

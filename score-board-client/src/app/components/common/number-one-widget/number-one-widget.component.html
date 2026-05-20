@@ -1,0 +1,39 @@
+<div class="number-one-widget">
+  <mat-card>
+    <!--<mat-card-title>Number One</mat-card-title>-->
+    <mat-card-content>
+      <div class="number-one-container" *ngIf="games && rating">
+        <mat-chip-list>
+          <mat-chip selected color="accent" class="animated zoomIn">
+             <span class="bold"># 1</span>
+          </mat-chip>
+        </mat-chip-list>
+        <div class="game-selector">
+          <mat-form-field class="select-game">
+            <mat-label i18n>Select Game</mat-label>
+            <mat-select [(value)]="gameId" (valueChange)="changeGame($event)">
+              <mat-option *ngFor="let game of games" [value]="game.id">
+                {{game.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="player-info">
+          <div class="avatar animated zoomIn" [routerLink]="'/player/view/' + rating.player.id">
+            <img *ngIf="playerImage" mat-card-avatar [src]="playerImage">
+            <img *ngIf="!playerImage" mat-card-avatar src="../../../../assets/media/avatar-placeholder.png">
+            <span class="case"></span>
+          </div>
+          <div class="player-name animated zoomIn">
+            {{rating.player.playerName}}
+          </div>
+          <div class="score animated zoomIn">
+            <i class="fas fa-star"></i>
+            {{rating.conservativeRating | number}}
+          </div>
+        </div>
+      </div>
+      <img mat-card-image src="../../../../assets/media/bg-4.jpg">
+    </mat-card-content>
+  </mat-card>
+</div>

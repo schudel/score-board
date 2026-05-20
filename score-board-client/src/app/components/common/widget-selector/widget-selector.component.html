@@ -1,0 +1,25 @@
+<div class="widget-selector">
+  <div class="selector">
+    <mat-form-field class="no-drag">
+      <mat-label i18n>Select Widget</mat-label>
+      <mat-select [(ngModel)]="widget">
+        <mat-option *ngFor="let widget of widgets" [value]="widget.id">
+          {{getTranslatedWidgetName(widget.id)}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button type="button" mat-stroked-button color="accent" class="remove-button no-drag" (click)="removeWidget()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="widget-container">
+    <app-number-one-widget *ngIf="widget === 'NoOneWidget'" [ratings]="ratings"></app-number-one-widget>
+    <app-live-matches *ngIf="widget === 'LiveMatches'"></app-live-matches>
+    <app-match-list *ngIf="widget === 'RecentMatches'" title="Recent Matches" i18n-title [matches]="recentMatches" sortColumn="PlayTime"></app-match-list>
+    <app-match-list *ngIf="widget === 'MyMatches'" title="My Matches" i18n-title [matches]="myMatches" sortColumn="PlayTime"></app-match-list>
+    <app-match-list *ngIf="widget === 'EpicMatches'"  title="Epic Matches" i18n-title [matches]="epicMatches" sortColumn="MatchQuality"></app-match-list>
+    <app-player-info *ngIf="widget === 'MyStatistics'" [player]="currentPlayer" [ratings]="ratings" [matches]="myMatches"></app-player-info>
+    <app-score-board-info *ngIf="widget === 'ScoreBoardInfo'" [highestScore]="highestScore"></app-score-board-info>
+    <app-dashboard-tile *ngIf="widget === 'StartMatch'" label="Start Match" i18n-label link="/match/create"></app-dashboard-tile>
+    <app-ranking-widget *ngIf="widget === 'Ranking'" [ratings]="ratings"></app-ranking-widget>
+    <div class="widget-selector-overlay"></div>
+  </div>
+</div>

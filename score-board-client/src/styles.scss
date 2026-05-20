@@ -1,0 +1,106 @@
+/* fonts */
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('assets/fonts/Roboto/Roboto-Light.ttf?v=4.3.0') format('truetype');
+}
+
+/* third party */
+@import "assets/styles/animate.css";
+// fontAwesome
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+// regular style toast
+@import '~ngx-toastr/toastr';
+// quill
+@import "~quill/dist/quill.core.css";
+/*@import "~quill/dist/quill.bubble.css";*/
+@import "~quill/dist/quill.snow.css";
+/* ngx-emoji-mart */
+@import "~@ctrl/ngx-emoji-mart/picker.css";
+/* mat */
+@import '~@mat-datetimepicker/core/datetimepicker/datetimepicker-theme';
+
+/* themes */
+@import "themes/themes";
+
+/* component styles */
+@import "app/app.component";
+@import "app/components/common/loading-screen/loading-screen.component";
+@import "app/components/common/navigation/navigation.component";
+@import "app/components/common/personal-information/personal-information.component";
+@import "app/components/common/change-password/change-password.component";
+@import "app/components/common/profile-settings/profile-settings.component";
+@import "app/components/common/quick-panel/quick-panel.component";
+@import "app/components/common/notifications/notifications.component";
+@import "app/components/common/chat/chat.component";
+@import "app/components/common/dashboard-tile/dashboard-tile.component";
+@import "app/components/common/live-matches/live-matches.component";
+@import "app/components/common/match-list/match-list.component";
+@import "app/components/common/number-one-widget/number-one-widget.component";
+@import "app/components/common/player-info/player-info.component";
+@import "app/components/common/score-board-info/score-board-info.component";
+@import "app/components/common/ranking-widget/ranking-widget.component";
+@import "app/components/common/widget-selector/widget-selector.component";
+@import "app/components/common/giphy/giphy.component";
+@import "app/components/common/match-detail/match-detail.component";
+@import "app/components/common/rating-timeline/rating-timeline.component";
+@import "app/components/common/players-statistics/players-statistics.component";
+@import "app/components/common/games-statistics/games-statistics.component";
+@import "app/components/common/matches-statistics/matches-statistics.component";
+@import "app/components/routes/dashboard/dashboard.component";
+@import "app/components/routes/games/games.component";
+@import "app/components/routes/login/login.component";
+@import "app/components/routes/matches/matches.component";
+@import "app/components/routes/players/players.component";
+@import "app/components/routes/ranking/ranking.component";
+@import "app/components/routes/admin/admin.component";
+@import "app/components/routes/page-not-found/page-not-found.component";
+@import "app/components/routes/registration/registration.component";
+@import "app/components/routes/profile/profile.component";
+@import "app/components/routes/disclaimers/disclaimers.component";
+@import "app/components/routes/privacy-policy/privacy-policy.component";
+@import "app/components/routes/live/live.component";
+@import "app/components/routes/match/match.component";
+@import "app/components/routes/statistics/statistics.component";
+
+/* base style */
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: $main-content-bg;
+  color: $main-font-color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
+
+.image-drop-zone {
+  z-index: 0;
+  border: 2px dashed darkgray;
+  height: 125px;
+  width: 150px;
+  border-radius: 75px;
+  padding-top: 25px;
+  font-size: 12px;
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
+.image-drop-zone-no-radius {
+  z-index: 0;
+  border: 2px dashed darkgray;
+  height: 171px;
+  width: auto;
+  max-height: 146px;
+  max-width: 196px;
+  border-radius: 0;
+  padding-top: 50px;
+  font-size: 12px;
+  font-family: $font-family;
+  font-weight: $font-weight;
+}

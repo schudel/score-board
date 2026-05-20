@@ -1,0 +1,32 @@
+.match-list {
+  height: 100%;
+  width: 100%;
+
+  mat-card {
+    mat-card-content {
+      position: relative;
+      height: calc(100% - 65px);
+      width: 100%;
+      overflow: auto;
+    }
+  }
+  .edit-create-buttons {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    button {
+      margin-left: 5px;
+    }
+  }
+
+  .filter-field {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+
+    td {
+    }
+  }
+}

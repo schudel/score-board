@@ -1,0 +1,12 @@
+.live-matches {
+  height: 100%;
+  width: 100%;
+
+  .live-container {
+    height: calc(100% - 2px);
+
+    .create-button-container {
+      display: none;
+    }
+  }
+}

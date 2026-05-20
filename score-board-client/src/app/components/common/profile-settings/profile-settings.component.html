@@ -1,0 +1,24 @@
+<div class="profile-settings">
+  <form [formGroup]="settingsForm" (ngSubmit)="onSubmit()" fxFlex="100%">
+    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <mat-form-field>
+        <mat-label i18n>Language</mat-label>
+        <mat-select formControlName="languageCode">
+          <mat-option *ngFor="let language of languages" [value]="language.languageCode">
+            <span class="profile-settings-flag-container"><img *ngIf="language.image" mat-card-avatar class="profile-settings-flag" [src]="'../../../../assets/media/' + language.image" alt="flag"></span>
+            <span class="profile-settings-language-text">{{language.displayName}}</span>
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <mat-slide-toggle formControlName="darkMode" (change)="toggleDarkTheme($event.checked)" i18n>Dark Theme</mat-slide-toggle> <!-- [checked]="isDarkTheme" (change)="toggleDarkTheme($event.checked)" -->
+    </div>
+    <div class="button-container">
+      <mat-error *ngIf="error" class="error">
+        {{ error }}
+      </mat-error>
+      <button type="submit" mat-stroked-button color="accent" i18n>Save</button>
+    </div>
+  </form>
+</div>

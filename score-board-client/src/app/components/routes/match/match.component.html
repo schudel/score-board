@@ -1,0 +1,14 @@
+<div class="match-container animated fadeIn">
+  <mat-card>
+    <mat-card-title *ngIf="!isCreateMode && !isEditMode" i18n>Match</mat-card-title>
+    <mat-card-title *ngIf="isCreateMode" i18n>Create Match</mat-card-title>
+    <mat-card-title *ngIf="isEditMode" i18n>Edit Match</mat-card-title>
+    <div class="edit-create-buttons" *ngIf="match && (isAdmin || canUpdate)">
+      <button *ngIf="!isEditMode && !isCreateMode" mat-stroked-button color="accent" [routerLink]="'/match/edit/' + match.id" i18n>Edit</button>
+      <button *ngIf="!isCreateMode" mat-stroked-button color="accent" [routerLink]="'/match/create'" i18n>Create</button>
+    </div>
+    <mat-card-content>
+      <app-match-detail [isCreateMode]="isCreateMode" [isEditMode]="isEditMode" [match]="match"></app-match-detail>
+    </mat-card-content>
+  </mat-card>
+</div>

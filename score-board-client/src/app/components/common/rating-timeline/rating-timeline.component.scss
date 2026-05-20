@@ -1,0 +1,25 @@
+.rating-timeline-container {
+  width: 100%;
+  border: 1px solid lightgray;
+
+  h3 {
+    margin-left: 10px;
+  }
+  google-chart {
+    width: 100%;
+    min-height: 500px;
+
+    svg {
+
+      rect {
+        /*fill: rgba(255, 255, 255, 0) !important;*/
+      }
+    }
+  }
+}
+
+.dark-theme {
+  .rating-timeline-container {
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  }
+}

@@ -1,0 +1,36 @@
+<div class="score-board-info">
+  <mat-card class="main-card">
+    <!--<mat-card-title>Scoreboard Info</mat-card-title>-->
+    <mat-card-content class="card-container">
+      <mat-card class="sub-card animated zoomIn" routerLink="/games">
+        <mat-card-content>
+          <i class="fas fa-gamepad"></i>
+          <div class="title" i18n>Games</div>
+          <div class="sub-title"><span class="bold">{{gameCount}} </span><ng-container i18n>Games available</ng-container></div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="sub-card animated zoomIn" routerLink="/players">
+        <mat-card-content>
+          <i class="fas fa-users"></i>
+          <div class="title" i18n>Players</div>
+          <div class="sub-title"><span class="bold">{{playerCount}} </span><ng-container i18n>Players registered</ng-container></div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="sub-card animated zoomIn" routerLink="/matches">
+        <mat-card-content>
+          <i class="fas fa-handshake"></i>
+          <div class="title" i18n>Matches</div>
+          <div class="sub-title"><span class="bold">{{matchCount}} </span><ng-container i18n>Matches played</ng-container></div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="sub-card animated zoomIn" routerLink="/ranking">
+        <mat-card-content>
+          <i class="fas fa-star"></i>
+          <div class="title" i18n>Score</div>
+          <div class="sub-title"><ng-container i18n>Highest Score</ng-container>: <span class="bold">{{highestScore | number}}</span></div>
+        </mat-card-content>
+      </mat-card>
+    </mat-card-content>
+    <img mat-card-image src="../../../../assets/media/bg-4.jpg" alt="Score Board Info Background Image">
+  </mat-card>
+</div>

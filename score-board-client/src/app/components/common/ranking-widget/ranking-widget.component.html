@@ -1,0 +1,54 @@
+<div class="ranking-widget">
+  <mat-card>
+    <mat-card-title i18n>Ranking</mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="select-game">
+        <mat-label i18n>Select Game</mat-label>
+        <mat-select [(value)]="gameId" (valueChange)="changeGame($event)">
+          <mat-option *ngFor="let game of games" [value]="game.id">
+            {{game.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="filter-field">
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter" i18n-placeholder>
+      </mat-form-field>
+      <table  mat-table [dataSource]="dataSource" matSort matSortActive="Ranking" matSortDirection="desc">
+        <ng-container matColumnDef="Ranking">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Ranking</th>
+          <td mat-cell *matCellDef="let element"># {{getRanking(element) | number}}</td>
+        </ng-container>
+        <!--
+        <ng-container matColumnDef="Image">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element">
+            <img *ngIf="element.Player.Image" mat-card-avatar [src]="element.Player.Image">
+            <img *ngIf="!element.Player.Image" mat-card-avatar src="../../../../assets/media/avatar-placeholder.png">
+          </td>
+        </ng-container>
+        -->
+        <ng-container matColumnDef="PlayerName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Player Name</th>
+          <td mat-cell *matCellDef="let element"><a mat-button color="accent" [routerLink]="'/player/view/' + element.player.id">{{element.player.playerName}}</a></td>
+        </ng-container>
+        <ng-container matColumnDef="ConservativeRating">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Conservative Rating</th>
+          <td mat-cell *matCellDef="let element"> {{element.conservativeRating | number}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Mean">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Mean</th>
+          <td mat-cell *matCellDef="let element"> {{element.mean | number}} </td>
+        </ng-container>
+        <ng-container matColumnDef="StandardDeviation">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Standard Deviation</th>
+          <td mat-cell *matCellDef="let element"> {{element.standardDeviation | number}} </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <div class="rating-timeline">
+        <app-rating-timeline [gameId]="gameId"></app-rating-timeline>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

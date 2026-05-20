@@ -1,0 +1,71 @@
+<div class="match-list">
+  <mat-card>
+    <mat-card-title>{{title}}</mat-card-title>
+    <div class="edit-create-buttons" *ngIf="showCreateButton">
+      <button mat-stroked-button color="accent" [routerLink]="'/match/create'" i18n>Create</button>
+    </div>
+    <mat-card-content>
+      <mat-form-field class="filter-field">
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter" i18n-placeholder>
+      </mat-form-field>
+      <table  mat-table [dataSource]="dataSource" matSort [matSortActive]="sortColumn" matSortDirection="desc">
+        <ng-container matColumnDef="Game">
+          <th mat-header-cell *matHeaderCellDef  mat-sort-header i18n>Game</th>
+          <td mat-cell *matCellDef="let element"><a mat-button color="accent" [routerLink]="'/game/view/' + element.game.id">{{element.game.name}}</a></td>
+        </ng-container>
+        <ng-container matColumnDef="Team1">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Team 1</th>
+          <td mat-cell *matCellDef="let element">
+            <span *ngIf="element.team1 && element.team1.player1"><span *ngIf="element.team1.name">{{element.team1.name}} - </span><a mat-button color="accent" [routerLink]="'/player/view/' + element.team1.player1.id">{{element.team1.player1.playerName}}</a></span>
+            <span *ngIf="element.team1 && element.team1.player2"><span> / </span><a mat-button color="accent" [routerLink]="'/player/view/' + element.team1.player2.Id">{{element.team1.player2.playerName}}</a></span>
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="Team2">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Team 2</th>
+          <td mat-cell *matCellDef="let element">
+            <span *ngIf="element.team2 && element.team2.player1"><span *ngIf="element.team2.name">{{element.team2.name}} - </span><a mat-button color="accent" [routerLink]="'/player/view/' + element.team2.player1.id">{{element.team2.player1.playerName}}</a></span>
+            <span *ngIf="element.team2 && element.team2.player2"><span> / </span><a mat-button color="accent" [routerLink]="'/player/view/' + element.team2.player2.id">{{element.team2.player2.playerName}}</a></span>
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="Score1">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Score 1</th>
+          <td mat-cell *matCellDef="let element"> {{element.score1 | number}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Score2">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Score 2</th>
+          <td mat-cell *matCellDef="let element"> {{element.score2 | number}} </td>
+        </ng-container>
+        <ng-container matColumnDef="State">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>State</th>
+          <td mat-cell *matCellDef="let element"> {{getTranslatedState(element.state)}} </td>
+        </ng-container>
+        <ng-container matColumnDef="MatchQuality">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Match Quality</th>
+          <td mat-cell *matCellDef="let element"> {{element.matchQuality | number}} </td>
+        </ng-container>
+        <ng-container matColumnDef="StartTime">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Start Time</th>
+        <td mat-cell *matCellDef="let element"> {{getDate(element.startTime) | date : getDateFormat() }} </td>
+      </ng-container>
+        <ng-container matColumnDef="StopTime">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Stop Time</th>
+          <td mat-cell *matCellDef="let element"> {{getDate(element.stopTime) | date : getDateFormat() }} </td>
+        </ng-container>
+        <ng-container matColumnDef="Duration">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Duration</th>
+          <td mat-cell *matCellDef="let element"> {{getDuration(element.duration)}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Details">
+          <th mat-header-cell *matHeaderCellDef i18n>Details</th>
+          <td mat-cell *matCellDef="let element"> <button type="button" mat-stroked-button color="accent" [routerLink]="'/match/view/' + element.id"><i class="fas fa-info"></i></button> </td>
+        </ng-container>
+        <ng-container matColumnDef="Edit">
+          <th mat-header-cell *matHeaderCellDef i18n>Edit</th>
+          <td mat-cell *matCellDef="let element"> <button *ngIf="showEditButton && (canUpdate(element) || isAdmin)" type="button" mat-stroked-button color="accent" [routerLink]="'/match/edit/' + element.id" matTooltip="Edit" i18n-mattooltip><i class="fas fa-edit"></i></button> </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </mat-card-content>
+  </mat-card>
+</div>

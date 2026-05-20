@@ -1,0 +1,32 @@
+.ranking-widget {
+  height: 100%;
+  width: 100%;
+
+  .select-game {
+    width: 200px;
+    margin-right: 10px;
+  }
+  .filter-field {
+    width: calc(100% - 210px);
+  }
+
+  mat-card-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 65px);
+    overflow: auto;
+  }
+
+  table {
+    width: 100%;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .rating-timeline {
+    margin-top: 20px;
+    display: block;
+  }
+}

@@ -1,0 +1,10 @@
+<div class="rating-timeline-container" *ngIf="data.length > 0">
+  <h3 i18n>Rating Timeline</h3>
+  <google-chart
+    [type]="type"
+    [data]="data"
+    [columnNames]="columns"
+    [options]="options"
+    [dynamicResize]="true">
+  </google-chart>
+</div>
