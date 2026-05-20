@@ -292,4 +292,26 @@ MIT License – see [LICENSE](LICENSE).
 
 ## Screenshots
 
-> **TODO:** Add screenshots of the main views (scoreboard, match detail, live view, chat).
+### Dashboard - Light
+
+![Dashboard - Light](docs/screenshots/score-board-light.png)
+
+### Dashboard - Dark
+
+![Dashboard - Dark](docs/screenshots/score-board-dark.png)
+
+### Live Match
+
+![Match detail](docs/screenshots/live-match.png)
+
+### Ranking
+
+![Ranking](docs/screenshots/ranking.png)
+
+### Statistics
+
+![Statistics1](docs/screenshots/statistics1.png)
+
+![Statistics2](docs/screenshots/statistics2.png)
+
+![Statistics3](docs/screenshots/statistics3.png)
