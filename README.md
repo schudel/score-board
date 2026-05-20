@@ -7,6 +7,12 @@ Players can register, log in, manage games and matches, track ratings, and watch
 
 > **Status:** Legacy / Personal Project. Built as a learning project. The application is functional but uses end-of-life runtimes (.NET Core 3.1, Angular 9). Upgrading dependencies is strongly recommended before any new deployment.
 
+## Background
+
+Score-Board started as my first Angular project and was built as a learning project around a real use case: tracking games, matches, ratings, and live updates during lunch breaks.
+
+It was actually used internally at my former workplace to organize and track casual gaming sessions during breaks. While the technology stack is now outdated, the project remains a useful snapshot of a full-stack Angular/.NET learning project with authentication, real-time updates, localization, and database-backed score tracking.
+
 ---
 
 ## Architecture Overview
